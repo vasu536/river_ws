@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package>
+  <name>orientus_sdk_c</name>
+  <version>0.0.4</version>
+  <description>The Orientus C SDK</description>
+  <maintainer email="mwills@wpi.edu">Mitchell Wills</maintainer>
+  <author>Advanced Navigation</author>
+  <author>Nick Otero</author>
+  <license>MIT</license>
+
+  <url type="website">http://www.advancednavigation.com.au/product/orientus#software</url>
+  <url type="bugtracker">https://github.com/RIVeR-Lab/orientus_driver/issues</url>
+  <url type="repository">https://github.com/RIVeR-Lab/orientus_driver</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+</package>
