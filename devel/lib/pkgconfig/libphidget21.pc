@@ -1,0 +1,8 @@
+prefix=/home/vasu536/catkin_ws/devel
+
+Name: libphidget21
+Description: Description of libphidget21
+Version: 0.7.5
+Cflags: 
+Libs: -L/home/vasu536/catkin_ws/devel/lib 
+Requires: 

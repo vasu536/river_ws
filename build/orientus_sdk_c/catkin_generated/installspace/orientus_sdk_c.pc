@@ -1,0 +1,8 @@
+prefix=/home/vasu536/catkin_ws/install
+
+Name: orientus_sdk_c
+Description: Description of orientus_sdk_c
+Version: 0.0.4
+Cflags: -I/home/vasu536/catkin_ws/install/include
+Libs: -L/home/vasu536/catkin_ws/install/lib -lorientus_sdk_c -lorientus_sdk_c_rs232
+Requires: 
