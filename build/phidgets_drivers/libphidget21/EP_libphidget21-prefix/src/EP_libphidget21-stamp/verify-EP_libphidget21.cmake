@@ -1,4 +1,4 @@
-set(file "/home/vasu536/catkin_ws/build/phidgets_drivers/libphidget21/EP_libphidget21-prefix/src/libphidget_2.1.8.20151217.tar.gz")
+set(file "/home/vasu536/river_ws/build/phidgets_drivers/libphidget21/EP_libphidget21-prefix/src/libphidget_2.1.8.20151217.tar.gz")
 message(STATUS "verifying file...
      file='${file}'")
 set(expect_value "818ab2ff1de92ed9568a206e0e89657f")
@@ -16,7 +16,7 @@ does not match expected value
 Retrying download.
 ")
     file(REMOVE "${file}")
-    execute_process(COMMAND ${CMAKE_COMMAND} -P "/home/vasu536/catkin_ws/build/phidgets_drivers/libphidget21/EP_libphidget21-prefix/src/EP_libphidget21-stamp/download-EP_libphidget21.cmake")
+    execute_process(COMMAND ${CMAKE_COMMAND} -P "/home/vasu536/river_ws/build/phidgets_drivers/libphidget21/EP_libphidget21-prefix/src/EP_libphidget21-stamp/download-EP_libphidget21.cmake")
   endif()
   math(EXPR attempt "${attempt} + 1")
 endwhile()

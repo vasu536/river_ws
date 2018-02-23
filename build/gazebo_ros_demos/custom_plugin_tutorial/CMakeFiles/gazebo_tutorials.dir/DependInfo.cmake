@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/vasu536/catkin_ws/src/gazebo_ros_demos/custom_plugin_tutorial/src/simple_world_plugin.cpp" "/home/vasu536/catkin_ws/build/gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/gazebo_tutorials.dir/src/simple_world_plugin.cpp.o"
+  "/home/vasu536/river_ws/src/gazebo_ros_demos/custom_plugin_tutorial/src/simple_world_plugin.cpp" "/home/vasu536/river_ws/build/gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/gazebo_tutorials.dir/src/simple_world_plugin.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

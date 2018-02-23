@@ -1,8 +1,8 @@
-prefix=/home/vasu536/catkin_ws/devel
+prefix=/home/vasu536/river_ws/devel
 
 Name: orientus_sdk_c
 Description: Description of orientus_sdk_c
 Version: 0.0.4
-Cflags: -I/home/vasu536/catkin_ws/src/orientus_sdk_c/include
-Libs: -L/home/vasu536/catkin_ws/devel/lib -lorientus_sdk_c -lorientus_sdk_c_rs232
+Cflags: -I/home/vasu536/river_ws/src/orientus_sdk_c/include
+Libs: -L/home/vasu536/river_ws/devel/lib -lorientus_sdk_c -lorientus_sdk_c_rs232
 Requires: 

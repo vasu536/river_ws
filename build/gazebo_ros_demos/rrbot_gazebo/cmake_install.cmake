@@ -1,8 +1,8 @@
-# Install script for directory: /home/vasu536/catkin_ws/src/gazebo_ros_demos/rrbot_gazebo
+# Install script for directory: /home/vasu536/river_ws/src/gazebo_ros_demos/rrbot_gazebo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/vasu536/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/vasu536/river_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,25 +33,25 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vasu536/catkin_ws/build/gazebo_ros_demos/rrbot_gazebo/catkin_generated/installspace/rrbot_gazebo.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vasu536/river_ws/build/gazebo_ros_demos/rrbot_gazebo/catkin_generated/installspace/rrbot_gazebo.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rrbot_gazebo/cmake" TYPE FILE FILES
-    "/home/vasu536/catkin_ws/build/gazebo_ros_demos/rrbot_gazebo/catkin_generated/installspace/rrbot_gazeboConfig.cmake"
-    "/home/vasu536/catkin_ws/build/gazebo_ros_demos/rrbot_gazebo/catkin_generated/installspace/rrbot_gazeboConfig-version.cmake"
+    "/home/vasu536/river_ws/build/gazebo_ros_demos/rrbot_gazebo/catkin_generated/installspace/rrbot_gazeboConfig.cmake"
+    "/home/vasu536/river_ws/build/gazebo_ros_demos/rrbot_gazebo/catkin_generated/installspace/rrbot_gazeboConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rrbot_gazebo" TYPE FILE FILES "/home/vasu536/catkin_ws/src/gazebo_ros_demos/rrbot_gazebo/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rrbot_gazebo" TYPE FILE FILES "/home/vasu536/river_ws/src/gazebo_ros_demos/rrbot_gazebo/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rrbot_gazebo" TYPE DIRECTORY FILES "/home/vasu536/catkin_ws/src/gazebo_ros_demos/rrbot_gazebo/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rrbot_gazebo" TYPE DIRECTORY FILES "/home/vasu536/river_ws/src/gazebo_ros_demos/rrbot_gazebo/launch")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rrbot_gazebo" TYPE DIRECTORY FILES "/home/vasu536/catkin_ws/src/gazebo_ros_demos/rrbot_gazebo/worlds")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rrbot_gazebo" TYPE DIRECTORY FILES "/home/vasu536/river_ws/src/gazebo_ros_demos/rrbot_gazebo/worlds")
 endif()
 

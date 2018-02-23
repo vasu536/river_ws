@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_ik/srv/SetDigitalOutput.srv"
+services_str = "/home/vasu536/river_ws/src/phidgets_drivers/phidgets_ik/srv/SetDigitalOutput.srv"
 pkg_name = "phidgets_ik"
 dependencies_str = ""
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

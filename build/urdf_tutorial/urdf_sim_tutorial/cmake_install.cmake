@@ -1,8 +1,8 @@
-# Install script for directory: /home/vasu536/catkin_ws/src/urdf_tutorial/urdf_sim_tutorial
+# Install script for directory: /home/vasu536/river_ws/src/urdf_tutorial/urdf_sim_tutorial
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/vasu536/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/vasu536/river_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,25 +33,25 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vasu536/catkin_ws/build/urdf_tutorial/urdf_sim_tutorial/catkin_generated/installspace/urdf_sim_tutorial.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vasu536/river_ws/build/urdf_tutorial/urdf_sim_tutorial/catkin_generated/installspace/urdf_sim_tutorial.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/urdf_sim_tutorial/cmake" TYPE FILE FILES
-    "/home/vasu536/catkin_ws/build/urdf_tutorial/urdf_sim_tutorial/catkin_generated/installspace/urdf_sim_tutorialConfig.cmake"
-    "/home/vasu536/catkin_ws/build/urdf_tutorial/urdf_sim_tutorial/catkin_generated/installspace/urdf_sim_tutorialConfig-version.cmake"
+    "/home/vasu536/river_ws/build/urdf_tutorial/urdf_sim_tutorial/catkin_generated/installspace/urdf_sim_tutorialConfig.cmake"
+    "/home/vasu536/river_ws/build/urdf_tutorial/urdf_sim_tutorial/catkin_generated/installspace/urdf_sim_tutorialConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/urdf_sim_tutorial" TYPE FILE FILES "/home/vasu536/catkin_ws/src/urdf_tutorial/urdf_sim_tutorial/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/urdf_sim_tutorial" TYPE FILE FILES "/home/vasu536/river_ws/src/urdf_tutorial/urdf_sim_tutorial/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/urdf_sim_tutorial" TYPE DIRECTORY FILES
-    "/home/vasu536/catkin_ws/src/urdf_tutorial/urdf_sim_tutorial/config"
-    "/home/vasu536/catkin_ws/src/urdf_tutorial/urdf_sim_tutorial/launch"
-    "/home/vasu536/catkin_ws/src/urdf_tutorial/urdf_sim_tutorial/urdf"
+    "/home/vasu536/river_ws/src/urdf_tutorial/urdf_sim_tutorial/config"
+    "/home/vasu536/river_ws/src/urdf_tutorial/urdf_sim_tutorial/launch"
+    "/home/vasu536/river_ws/src/urdf_tutorial/urdf_sim_tutorial/urdf"
     )
 endif()
 

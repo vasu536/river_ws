@@ -1,1 +1,1 @@
-/usr/bin/c++  -fPIC   -shared -Wl,-soname,libquadrant_locater.so -o /home/vasu536/catkin_ws/devel/lib/libquadrant_locater.so CMakeFiles/quadrant_locater.dir/src/position_calculator_node.cpp.o 
+/usr/bin/c++  -fPIC   -shared -Wl,-soname,libquadrant_locater.so -o /home/vasu536/river_ws/devel/lib/libquadrant_locater.so CMakeFiles/quadrant_locater.dir/src/position_calculator_node.cpp.o 

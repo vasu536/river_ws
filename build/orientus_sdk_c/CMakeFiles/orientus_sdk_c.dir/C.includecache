@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/vasu536/catkin_ws/src/orientus_sdk_c/include/orientus_sdk_c/an_packet_protocol.h
+/home/vasu536/river_ws/src/orientus_sdk_c/include/orientus_sdk_c/an_packet_protocol.h
 
-/home/vasu536/catkin_ws/src/orientus_sdk_c/include/orientus_sdk_c/orientus_packets.h
+/home/vasu536/river_ws/src/orientus_sdk_c/include/orientus_sdk_c/orientus_packets.h
 
-/home/vasu536/catkin_ws/src/orientus_sdk_c/src/an_packet_protocol.c
+/home/vasu536/river_ws/src/orientus_sdk_c/src/an_packet_protocol.c
 stdlib.h
 -
 stdint.h
@@ -18,15 +18,15 @@ stdint.h
 string.h
 -
 an_packet_protocol.h
-/home/vasu536/catkin_ws/src/orientus_sdk_c/src/an_packet_protocol.h
+/home/vasu536/river_ws/src/orientus_sdk_c/src/an_packet_protocol.h
 
-/home/vasu536/catkin_ws/src/orientus_sdk_c/src/orientus_packets.c
+/home/vasu536/river_ws/src/orientus_sdk_c/src/orientus_packets.c
 stdint.h
 -
 string.h
 -
 an_packet_protocol.h
-/home/vasu536/catkin_ws/src/orientus_sdk_c/src/an_packet_protocol.h
+/home/vasu536/river_ws/src/orientus_sdk_c/src/an_packet_protocol.h
 orientus_packets.h
-/home/vasu536/catkin_ws/src/orientus_sdk_c/src/orientus_packets.h
+/home/vasu536/river_ws/src/orientus_sdk_c/src/orientus_packets.h
 

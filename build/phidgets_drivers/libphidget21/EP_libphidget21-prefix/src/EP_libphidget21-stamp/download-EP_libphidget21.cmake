@@ -1,12 +1,12 @@
-if(EXISTS "/home/vasu536/catkin_ws/build/phidgets_drivers/libphidget21/EP_libphidget21-prefix/src/libphidget_2.1.8.20151217.tar.gz")
-  file("MD5" "/home/vasu536/catkin_ws/build/phidgets_drivers/libphidget21/EP_libphidget21-prefix/src/libphidget_2.1.8.20151217.tar.gz" hash_value)
+if(EXISTS "/home/vasu536/river_ws/build/phidgets_drivers/libphidget21/EP_libphidget21-prefix/src/libphidget_2.1.8.20151217.tar.gz")
+  file("MD5" "/home/vasu536/river_ws/build/phidgets_drivers/libphidget21/EP_libphidget21-prefix/src/libphidget_2.1.8.20151217.tar.gz" hash_value)
   if("x${hash_value}" STREQUAL "x818ab2ff1de92ed9568a206e0e89657f")
     return()
   endif()
 endif()
 message(STATUS "downloading...
      src='https://www.phidgets.com/downloads/phidget21/libraries/linux/libphidget/libphidget_2.1.8.20151217.tar.gz'
-     dst='/home/vasu536/catkin_ws/build/phidgets_drivers/libphidget21/EP_libphidget21-prefix/src/libphidget_2.1.8.20151217.tar.gz'
+     dst='/home/vasu536/river_ws/build/phidgets_drivers/libphidget21/EP_libphidget21-prefix/src/libphidget_2.1.8.20151217.tar.gz'
      timeout='none'")
 
 
@@ -14,7 +14,7 @@ message(STATUS "downloading...
 
 file(DOWNLOAD
   "https://www.phidgets.com/downloads/phidget21/libraries/linux/libphidget/libphidget_2.1.8.20151217.tar.gz"
-  "/home/vasu536/catkin_ws/build/phidgets_drivers/libphidget21/EP_libphidget21-prefix/src/libphidget_2.1.8.20151217.tar.gz"
+  "/home/vasu536/river_ws/build/phidgets_drivers/libphidget21/EP_libphidget21-prefix/src/libphidget_2.1.8.20151217.tar.gz"
   SHOW_PROGRESS
   # no TIMEOUT
   STATUS status

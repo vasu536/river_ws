@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vasu536/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/vasu536/river_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vasu536/catkin_ws/build
+CMAKE_BINARY_DIR = /home/vasu536/river_ws/build
 
 # Utility rule file for _run_tests_urdf_tutorial_roslaunch-check_launch.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/vasu536/catkin_ws/build
 include urdf_tutorial/urdf_tutorial/CMakeFiles/_run_tests_urdf_tutorial_roslaunch-check_launch.dir/progress.make
 
 urdf_tutorial/urdf_tutorial/CMakeFiles/_run_tests_urdf_tutorial_roslaunch-check_launch:
-	cd /home/vasu536/catkin_ws/build/urdf_tutorial/urdf_tutorial && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/run_tests.py /home/vasu536/catkin_ws/build/test_results/urdf_tutorial/roslaunch-check_launch.xml /usr/bin/cmake\ -E\ make_directory\ /home/vasu536/catkin_ws/build/test_results/urdf_tutorial /opt/ros/kinetic/share/roslaunch/cmake/../scripts/roslaunch-check\ -o\ '/home/vasu536/catkin_ws/build/test_results/urdf_tutorial/roslaunch-check_launch.xml'\ '/home/vasu536/catkin_ws/src/urdf_tutorial/urdf_tutorial/launch'\ 
+	cd /home/vasu536/river_ws/build/urdf_tutorial/urdf_tutorial && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/run_tests.py /home/vasu536/river_ws/build/test_results/urdf_tutorial/roslaunch-check_launch.xml /usr/bin/cmake\ -E\ make_directory\ /home/vasu536/river_ws/build/test_results/urdf_tutorial /opt/ros/kinetic/share/roslaunch/cmake/../scripts/roslaunch-check\ -o\ '/home/vasu536/river_ws/build/test_results/urdf_tutorial/roslaunch-check_launch.xml'\ '/home/vasu536/river_ws/src/urdf_tutorial/urdf_tutorial/launch'\ 
 
 _run_tests_urdf_tutorial_roslaunch-check_launch: urdf_tutorial/urdf_tutorial/CMakeFiles/_run_tests_urdf_tutorial_roslaunch-check_launch
 _run_tests_urdf_tutorial_roslaunch-check_launch: urdf_tutorial/urdf_tutorial/CMakeFiles/_run_tests_urdf_tutorial_roslaunch-check_launch.dir/build.make
@@ -67,10 +67,10 @@ urdf_tutorial/urdf_tutorial/CMakeFiles/_run_tests_urdf_tutorial_roslaunch-check_
 .PHONY : urdf_tutorial/urdf_tutorial/CMakeFiles/_run_tests_urdf_tutorial_roslaunch-check_launch.dir/build
 
 urdf_tutorial/urdf_tutorial/CMakeFiles/_run_tests_urdf_tutorial_roslaunch-check_launch.dir/clean:
-	cd /home/vasu536/catkin_ws/build/urdf_tutorial/urdf_tutorial && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_urdf_tutorial_roslaunch-check_launch.dir/cmake_clean.cmake
+	cd /home/vasu536/river_ws/build/urdf_tutorial/urdf_tutorial && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_urdf_tutorial_roslaunch-check_launch.dir/cmake_clean.cmake
 .PHONY : urdf_tutorial/urdf_tutorial/CMakeFiles/_run_tests_urdf_tutorial_roslaunch-check_launch.dir/clean
 
 urdf_tutorial/urdf_tutorial/CMakeFiles/_run_tests_urdf_tutorial_roslaunch-check_launch.dir/depend:
-	cd /home/vasu536/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasu536/catkin_ws/src /home/vasu536/catkin_ws/src/urdf_tutorial/urdf_tutorial /home/vasu536/catkin_ws/build /home/vasu536/catkin_ws/build/urdf_tutorial/urdf_tutorial /home/vasu536/catkin_ws/build/urdf_tutorial/urdf_tutorial/CMakeFiles/_run_tests_urdf_tutorial_roslaunch-check_launch.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vasu536/river_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasu536/river_ws/src /home/vasu536/river_ws/src/urdf_tutorial/urdf_tutorial /home/vasu536/river_ws/build /home/vasu536/river_ws/build/urdf_tutorial/urdf_tutorial /home/vasu536/river_ws/build/urdf_tutorial/urdf_tutorial/CMakeFiles/_run_tests_urdf_tutorial_roslaunch-check_launch.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : urdf_tutorial/urdf_tutorial/CMakeFiles/_run_tests_urdf_tutorial_roslaunch-check_launch.dir/depend
 

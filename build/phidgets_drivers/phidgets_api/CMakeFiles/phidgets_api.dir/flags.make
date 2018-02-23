@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -Wall
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1 -Dphidgets_api_EXPORTS
 
-CXX_INCLUDES = -I/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/include -I/home/vasu536/catkin_ws/devel/include 
+CXX_INCLUDES = -I/home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/include -I/home/vasu536/river_ws/devel/include 
 

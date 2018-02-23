@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vasu536/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/vasu536/river_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vasu536/catkin_ws/build
+CMAKE_BINARY_DIR = /home/vasu536/river_ws/build
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -63,10 +63,10 @@ phidgets_drivers/libphidget21/CMakeFiles/_catkin_empty_exported_target.dir/build
 .PHONY : phidgets_drivers/libphidget21/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 phidgets_drivers/libphidget21/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/libphidget21 && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd /home/vasu536/river_ws/build/phidgets_drivers/libphidget21 && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : phidgets_drivers/libphidget21/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 phidgets_drivers/libphidget21/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/vasu536/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasu536/catkin_ws/src /home/vasu536/catkin_ws/src/phidgets_drivers/libphidget21 /home/vasu536/catkin_ws/build /home/vasu536/catkin_ws/build/phidgets_drivers/libphidget21 /home/vasu536/catkin_ws/build/phidgets_drivers/libphidget21/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vasu536/river_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasu536/river_ws/src /home/vasu536/river_ws/src/phidgets_drivers/libphidget21 /home/vasu536/river_ws/build /home/vasu536/river_ws/build/phidgets_drivers/libphidget21 /home/vasu536/river_ws/build/phidgets_drivers/libphidget21/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : phidgets_drivers/libphidget21/CMakeFiles/_catkin_empty_exported_target.dir/depend
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vasu536/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/vasu536/river_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vasu536/catkin_ws/build
+CMAKE_BINARY_DIR = /home/vasu536/river_ws/build
 
 # Utility rule file for _phidgets_ik_generate_messages_check_deps_SetDigitalOutput.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/vasu536/catkin_ws/build
 include phidgets_drivers/phidgets_ik/CMakeFiles/_phidgets_ik_generate_messages_check_deps_SetDigitalOutput.dir/progress.make
 
 phidgets_drivers/phidgets_ik/CMakeFiles/_phidgets_ik_generate_messages_check_deps_SetDigitalOutput:
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_ik && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py phidgets_ik /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_ik/srv/SetDigitalOutput.srv 
+	cd /home/vasu536/river_ws/build/phidgets_drivers/phidgets_ik && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py phidgets_ik /home/vasu536/river_ws/src/phidgets_drivers/phidgets_ik/srv/SetDigitalOutput.srv 
 
 _phidgets_ik_generate_messages_check_deps_SetDigitalOutput: phidgets_drivers/phidgets_ik/CMakeFiles/_phidgets_ik_generate_messages_check_deps_SetDigitalOutput
 _phidgets_ik_generate_messages_check_deps_SetDigitalOutput: phidgets_drivers/phidgets_ik/CMakeFiles/_phidgets_ik_generate_messages_check_deps_SetDigitalOutput.dir/build.make
@@ -67,10 +67,10 @@ phidgets_drivers/phidgets_ik/CMakeFiles/_phidgets_ik_generate_messages_check_dep
 .PHONY : phidgets_drivers/phidgets_ik/CMakeFiles/_phidgets_ik_generate_messages_check_deps_SetDigitalOutput.dir/build
 
 phidgets_drivers/phidgets_ik/CMakeFiles/_phidgets_ik_generate_messages_check_deps_SetDigitalOutput.dir/clean:
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_ik && $(CMAKE_COMMAND) -P CMakeFiles/_phidgets_ik_generate_messages_check_deps_SetDigitalOutput.dir/cmake_clean.cmake
+	cd /home/vasu536/river_ws/build/phidgets_drivers/phidgets_ik && $(CMAKE_COMMAND) -P CMakeFiles/_phidgets_ik_generate_messages_check_deps_SetDigitalOutput.dir/cmake_clean.cmake
 .PHONY : phidgets_drivers/phidgets_ik/CMakeFiles/_phidgets_ik_generate_messages_check_deps_SetDigitalOutput.dir/clean
 
 phidgets_drivers/phidgets_ik/CMakeFiles/_phidgets_ik_generate_messages_check_deps_SetDigitalOutput.dir/depend:
-	cd /home/vasu536/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasu536/catkin_ws/src /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_ik /home/vasu536/catkin_ws/build /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_ik /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_ik/CMakeFiles/_phidgets_ik_generate_messages_check_deps_SetDigitalOutput.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vasu536/river_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasu536/river_ws/src /home/vasu536/river_ws/src/phidgets_drivers/phidgets_ik /home/vasu536/river_ws/build /home/vasu536/river_ws/build/phidgets_drivers/phidgets_ik /home/vasu536/river_ws/build/phidgets_drivers/phidgets_ik/CMakeFiles/_phidgets_ik_generate_messages_check_deps_SetDigitalOutput.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : phidgets_drivers/phidgets_ik/CMakeFiles/_phidgets_ik_generate_messages_check_deps_SetDigitalOutput.dir/depend
 

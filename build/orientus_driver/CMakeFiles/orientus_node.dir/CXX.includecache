@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/vasu536/catkin_ws/src/orientus_driver/src/orientus_node.cpp
+/home/vasu536/river_ws/src/orientus_driver/src/orientus_node.cpp
 stdlib.h
 -
 stdio.h
@@ -22,29 +22,29 @@ exception
 boost/asio.hpp
 -
 orientus_sdk_c/an_packet_protocol.h
-/home/vasu536/catkin_ws/src/orientus_driver/src/orientus_sdk_c/an_packet_protocol.h
+/home/vasu536/river_ws/src/orientus_driver/src/orientus_sdk_c/an_packet_protocol.h
 orientus_sdk_c/orientus_packets.h
-/home/vasu536/catkin_ws/src/orientus_driver/src/orientus_sdk_c/orientus_packets.h
+/home/vasu536/river_ws/src/orientus_driver/src/orientus_sdk_c/orientus_packets.h
 ros/ros.h
-/home/vasu536/catkin_ws/src/orientus_driver/src/ros/ros.h
+/home/vasu536/river_ws/src/orientus_driver/src/ros/ros.h
 sensor_msgs/Imu.h
-/home/vasu536/catkin_ws/src/orientus_driver/src/sensor_msgs/Imu.h
+/home/vasu536/river_ws/src/orientus_driver/src/sensor_msgs/Imu.h
 sensor_msgs/MagneticField.h
-/home/vasu536/catkin_ws/src/orientus_driver/src/sensor_msgs/MagneticField.h
+/home/vasu536/river_ws/src/orientus_driver/src/sensor_msgs/MagneticField.h
 sensor_msgs/Temperature.h
-/home/vasu536/catkin_ws/src/orientus_driver/src/sensor_msgs/Temperature.h
+/home/vasu536/river_ws/src/orientus_driver/src/sensor_msgs/Temperature.h
 geometry_msgs/Quaternion.h
-/home/vasu536/catkin_ws/src/orientus_driver/src/geometry_msgs/Quaternion.h
+/home/vasu536/river_ws/src/orientus_driver/src/geometry_msgs/Quaternion.h
 geometry_msgs/Vector3.h
-/home/vasu536/catkin_ws/src/orientus_driver/src/geometry_msgs/Vector3.h
+/home/vasu536/river_ws/src/orientus_driver/src/geometry_msgs/Vector3.h
 diagnostic_updater/diagnostic_updater.h
-/home/vasu536/catkin_ws/src/orientus_driver/src/diagnostic_updater/diagnostic_updater.h
+/home/vasu536/river_ws/src/orientus_driver/src/diagnostic_updater/diagnostic_updater.h
 diagnostic_updater/DiagnosticStatusWrapper.h
-/home/vasu536/catkin_ws/src/orientus_driver/src/diagnostic_updater/DiagnosticStatusWrapper.h
+/home/vasu536/river_ws/src/orientus_driver/src/diagnostic_updater/DiagnosticStatusWrapper.h
 
-/home/vasu536/catkin_ws/src/orientus_sdk_c/include/orientus_sdk_c/an_packet_protocol.h
+/home/vasu536/river_ws/src/orientus_sdk_c/include/orientus_sdk_c/an_packet_protocol.h
 
-/home/vasu536/catkin_ws/src/orientus_sdk_c/include/orientus_sdk_c/orientus_packets.h
+/home/vasu536/river_ws/src/orientus_sdk_c/include/orientus_sdk_c/orientus_packets.h
 
 /opt/ros/kinetic/include/diagnostic_msgs/DiagnosticArray.h
 string

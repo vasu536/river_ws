@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vasu536/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/vasu536/river_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vasu536/catkin_ws/build
+CMAKE_BINARY_DIR = /home/vasu536/river_ws/build
 
 # Utility rule file for _run_tests_urdf_tutorial.
 
@@ -63,10 +63,10 @@ urdf_tutorial/urdf_tutorial/CMakeFiles/_run_tests_urdf_tutorial.dir/build: _run_
 .PHONY : urdf_tutorial/urdf_tutorial/CMakeFiles/_run_tests_urdf_tutorial.dir/build
 
 urdf_tutorial/urdf_tutorial/CMakeFiles/_run_tests_urdf_tutorial.dir/clean:
-	cd /home/vasu536/catkin_ws/build/urdf_tutorial/urdf_tutorial && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_urdf_tutorial.dir/cmake_clean.cmake
+	cd /home/vasu536/river_ws/build/urdf_tutorial/urdf_tutorial && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_urdf_tutorial.dir/cmake_clean.cmake
 .PHONY : urdf_tutorial/urdf_tutorial/CMakeFiles/_run_tests_urdf_tutorial.dir/clean
 
 urdf_tutorial/urdf_tutorial/CMakeFiles/_run_tests_urdf_tutorial.dir/depend:
-	cd /home/vasu536/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasu536/catkin_ws/src /home/vasu536/catkin_ws/src/urdf_tutorial/urdf_tutorial /home/vasu536/catkin_ws/build /home/vasu536/catkin_ws/build/urdf_tutorial/urdf_tutorial /home/vasu536/catkin_ws/build/urdf_tutorial/urdf_tutorial/CMakeFiles/_run_tests_urdf_tutorial.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vasu536/river_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasu536/river_ws/src /home/vasu536/river_ws/src/urdf_tutorial/urdf_tutorial /home/vasu536/river_ws/build /home/vasu536/river_ws/build/urdf_tutorial/urdf_tutorial /home/vasu536/river_ws/build/urdf_tutorial/urdf_tutorial/CMakeFiles/_run_tests_urdf_tutorial.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : urdf_tutorial/urdf_tutorial/CMakeFiles/_run_tests_urdf_tutorial.dir/depend
 

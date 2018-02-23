@@ -392,8 +392,8 @@ configure:12191: found /sbin/ldconfig
 configure:12204: result: /sbin/ldconfig
 configure:12214: checking for library containing dlopen
 configure:12245: gcc -o conftest -g -O2   conftest.c  >&5
-/tmp/cc93CoRF.o: In function `main':
-/home/vasu536/catkin_ws/build/phidgets_drivers/libphidget21/libphidget21-src/conftest.c:34: undefined reference to `dlopen'
+/tmp/ccKc9HZV.o: In function `main':
+/home/vasu536/river_ws/build/phidgets_drivers/libphidget21/libphidget21-src/conftest.c:34: undefined reference to `dlopen'
 collect2: error: ld returned 1 exit status
 configure:12245: $? = 1
 configure: failed program was:
@@ -442,8 +442,8 @@ configure:12303: gcc -o conftest -g -O2   conftest.c -ldl  >&5
 conftest.c:30:6: warning: conflicting types for built-in function 'sqrt'
  char sqrt ();
       ^
-/tmp/ccwd5spL.o: In function `main':
-/home/vasu536/catkin_ws/build/phidgets_drivers/libphidget21/libphidget21-src/conftest.c:34: undefined reference to `sqrt'
+/tmp/ccg9Ye6W.o: In function `main':
+/home/vasu536/river_ws/build/phidgets_drivers/libphidget21/libphidget21-src/conftest.c:34: undefined reference to `sqrt'
 collect2: error: ld returned 1 exit status
 configure:12303: $? = 1
 configure: failed program was:
@@ -492,8 +492,8 @@ configure:12303: $? = 0
 configure:12320: result: -lm
 configure:12330: checking for library containing pthread_join
 configure:12361: gcc -o conftest -g -O2   conftest.c -lm -ldl  >&5
-/tmp/ccpcJawS.o: In function `main':
-/home/vasu536/catkin_ws/build/phidgets_drivers/libphidget21/libphidget21-src/conftest.c:34: undefined reference to `pthread_join'
+/tmp/ccCVgPN6.o: In function `main':
+/home/vasu536/river_ws/build/phidgets_drivers/libphidget21/libphidget21-src/conftest.c:34: undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
 configure:12361: $? = 1
 configure: failed program was:
@@ -543,8 +543,8 @@ configure:12421: $? = 0
 configure:12438: result: none required
 configure:12637: checking for library containing libusb_init
 configure:12668: gcc -o conftest -g -O2   conftest.c -lpthread -lm -ldl  >&5
-/tmp/cc1IfIzS.o: In function `main':
-/home/vasu536/catkin_ws/build/phidgets_drivers/libphidget21/libphidget21-src/conftest.c:34: undefined reference to `libusb_init'
+/tmp/ccjEm2jl.o: In function `main':
+/home/vasu536/river_ws/build/phidgets_drivers/libphidget21/libphidget21-src/conftest.c:34: undefined reference to `libusb_init'
 collect2: error: ld returned 1 exit status
 configure:12668: $? = 1
 configure: failed program was:
@@ -709,7 +709,7 @@ lt_cv_to_tool_file_cmd=func_convert_file_noop
 ## Output variables. ##
 ## ----------------- ##
 
-ACLOCAL='${SHELL} /home/vasu536/catkin_ws/build/phidgets_drivers/libphidget21/libphidget21-src/missing aclocal-1.14'
+ACLOCAL='${SHELL} /home/vasu536/river_ws/build/phidgets_drivers/libphidget21/libphidget21-src/missing aclocal-1.14'
 AMDEPBACKSLASH='\'
 AMDEP_FALSE='#'
 AMDEP_TRUE=''
@@ -719,9 +719,9 @@ AM_DEFAULT_V='$(AM_DEFAULT_VERBOSITY)'
 AM_DEFAULT_VERBOSITY='0'
 AM_V='$(V)'
 AR='ar'
-AUTOCONF='${SHELL} /home/vasu536/catkin_ws/build/phidgets_drivers/libphidget21/libphidget21-src/missing autoconf'
-AUTOHEADER='${SHELL} /home/vasu536/catkin_ws/build/phidgets_drivers/libphidget21/libphidget21-src/missing autoheader'
-AUTOMAKE='${SHELL} /home/vasu536/catkin_ws/build/phidgets_drivers/libphidget21/libphidget21-src/missing automake-1.14'
+AUTOCONF='${SHELL} /home/vasu536/river_ws/build/phidgets_drivers/libphidget21/libphidget21-src/missing autoconf'
+AUTOHEADER='${SHELL} /home/vasu536/river_ws/build/phidgets_drivers/libphidget21/libphidget21-src/missing autoheader'
+AUTOMAKE='${SHELL} /home/vasu536/river_ws/build/phidgets_drivers/libphidget21/libphidget21-src/missing automake-1.14'
 AWK='gawk'
 CC='gcc'
 CCDEPMODE='depmode=gcc3'
@@ -762,7 +762,7 @@ LIBTOOL='$(SHELL) $(top_builddir)/libtool'
 LIPO=''
 LN_S='ln -s'
 LTLIBOBJS=''
-MAKEINFO='${SHELL} /home/vasu536/catkin_ws/build/phidgets_drivers/libphidget21/libphidget21-src/missing makeinfo'
+MAKEINFO='${SHELL} /home/vasu536/river_ws/build/phidgets_drivers/libphidget21/libphidget21-src/missing makeinfo'
 MANIFEST_TOOL=':'
 MKDIR_P='/bin/mkdir -p'
 NEW_LIBUSB_FALSE='#'
@@ -830,7 +830,7 @@ host_vendor='unknown'
 htmldir='${docdir}'
 includedir='${prefix}/include'
 infodir='${datarootdir}/info'
-install_sh='${SHELL} /home/vasu536/catkin_ws/build/phidgets_drivers/libphidget21/libphidget21-src/install-sh'
+install_sh='${SHELL} /home/vasu536/river_ws/build/phidgets_drivers/libphidget21/libphidget21-src/install-sh'
 libdir='${exec_prefix}/lib'
 libexecdir='${exec_prefix}/libexec'
 localedir='${datarootdir}/locale'

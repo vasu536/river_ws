@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/phidgets_ik_generate_messages_cpp"
-  "/home/vasu536/catkin_ws/devel/include/phidgets_ik/SetDigitalOutput.h"
+  "/home/vasu536/river_ws/devel/include/phidgets_ik/SetDigitalOutput.h"
 )
 
 # Per-language clean rules from dependency scanning.

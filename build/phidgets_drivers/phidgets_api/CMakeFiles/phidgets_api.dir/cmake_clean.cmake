@@ -5,8 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/phidgets_api.dir/src/ir.cpp.o"
   "CMakeFiles/phidgets_api.dir/src/motor.cpp.o"
   "CMakeFiles/phidgets_api.dir/src/phidget.cpp.o"
-  "/home/vasu536/catkin_ws/devel/lib/libphidgets_api.pdb"
-  "/home/vasu536/catkin_ws/devel/lib/libphidgets_api.so"
+  "/home/vasu536/river_ws/devel/lib/libphidgets_api.pdb"
+  "/home/vasu536/river_ws/devel/lib/libphidgets_api.so"
 )
 
 # Per-language clean rules from dependency scanning.

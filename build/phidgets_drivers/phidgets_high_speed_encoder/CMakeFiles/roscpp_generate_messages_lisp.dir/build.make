@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vasu536/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/vasu536/river_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vasu536/catkin_ws/build
+CMAKE_BINARY_DIR = /home/vasu536/river_ws/build
 
 # Utility rule file for roscpp_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ phidgets_drivers/phidgets_high_speed_encoder/CMakeFiles/roscpp_generate_messages
 .PHONY : phidgets_drivers/phidgets_high_speed_encoder/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 
 phidgets_drivers/phidgets_high_speed_encoder/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_high_speed_encoder && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/vasu536/river_ws/build/phidgets_drivers/phidgets_high_speed_encoder && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : phidgets_drivers/phidgets_high_speed_encoder/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 
 phidgets_drivers/phidgets_high_speed_encoder/CMakeFiles/roscpp_generate_messages_lisp.dir/depend:
-	cd /home/vasu536/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasu536/catkin_ws/src /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_high_speed_encoder /home/vasu536/catkin_ws/build /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_high_speed_encoder /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_high_speed_encoder/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vasu536/river_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasu536/river_ws/src /home/vasu536/river_ws/src/phidgets_drivers/phidgets_high_speed_encoder /home/vasu536/river_ws/build /home/vasu536/river_ws/build/phidgets_drivers/phidgets_high_speed_encoder /home/vasu536/river_ws/build/phidgets_drivers/phidgets_high_speed_encoder/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : phidgets_drivers/phidgets_high_speed_encoder/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
 

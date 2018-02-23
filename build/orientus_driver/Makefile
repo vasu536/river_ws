@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vasu536/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/vasu536/river_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vasu536/catkin_ws/build
+CMAKE_BINARY_DIR = /home/vasu536/river_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/vasu536/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vasu536/catkin_ws/build/CMakeFiles /home/vasu536/catkin_ws/build/orientus_driver/CMakeFiles/progress.marks
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_driver/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vasu536/catkin_ws/build/CMakeFiles 0
+	cd /home/vasu536/river_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vasu536/river_ws/build/CMakeFiles /home/vasu536/river_ws/build/orientus_driver/CMakeFiles/progress.marks
+	cd /home/vasu536/river_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_driver/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vasu536/river_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_driver/clean
+	cd /home/vasu536/river_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_driver/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_driver/preinstall
+	cd /home/vasu536/river_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_driver/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_driver/preinstall
+	cd /home/vasu536/river_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_driver/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/vasu536/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/vasu536/river_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule
+	cd /home/vasu536/river_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule
 .PHONY : orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -177,12 +177,12 @@ diagnostic_msgs_generate_messages_nodejs: orientus_driver/CMakeFiles/diagnostic_
 
 # fast build rule for target.
 diagnostic_msgs_generate_messages_nodejs/fast:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build.make orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build.make orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/build
 .PHONY : diagnostic_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
+	cd /home/vasu536/river_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
 .PHONY : orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -192,12 +192,12 @@ diagnostic_msgs_generate_messages_eus: orientus_driver/CMakeFiles/diagnostic_msg
 
 # fast build rule for target.
 diagnostic_msgs_generate_messages_eus/fast:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build.make orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/build
 .PHONY : diagnostic_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule
+	cd /home/vasu536/river_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule
 .PHONY : orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -207,12 +207,12 @@ diagnostic_msgs_generate_messages_cpp: orientus_driver/CMakeFiles/diagnostic_msg
 
 # fast build rule for target.
 diagnostic_msgs_generate_messages_cpp/fast:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build.make orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build.make orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build
 .PHONY : diagnostic_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
+	cd /home/vasu536/river_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
 .PHONY : orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -222,12 +222,12 @@ diagnostic_msgs_generate_messages_py: orientus_driver/CMakeFiles/diagnostic_msgs
 
 # fast build rule for target.
 diagnostic_msgs_generate_messages_py/fast:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build
 .PHONY : diagnostic_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
+	cd /home/vasu536/river_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
 .PHONY : orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -237,12 +237,12 @@ diagnostic_msgs_generate_messages_lisp: orientus_driver/CMakeFiles/diagnostic_ms
 
 # fast build rule for target.
 diagnostic_msgs_generate_messages_lisp/fast:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make orientus_driver/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
 .PHONY : diagnostic_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 orientus_driver/CMakeFiles/orientus_node.dir/rule:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_driver/CMakeFiles/orientus_node.dir/rule
+	cd /home/vasu536/river_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_driver/CMakeFiles/orientus_node.dir/rule
 .PHONY : orientus_driver/CMakeFiles/orientus_node.dir/rule
 
 # Convenience name for target.
@@ -252,7 +252,7 @@ orientus_node: orientus_driver/CMakeFiles/orientus_node.dir/rule
 
 # fast build rule for target.
 orientus_node/fast:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_driver/CMakeFiles/orientus_node.dir/build.make orientus_driver/CMakeFiles/orientus_node.dir/build
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_driver/CMakeFiles/orientus_node.dir/build.make orientus_driver/CMakeFiles/orientus_node.dir/build
 .PHONY : orientus_node/fast
 
 src/orientus_node.o: src/orientus_node.cpp.o
@@ -261,7 +261,7 @@ src/orientus_node.o: src/orientus_node.cpp.o
 
 # target to build an object file
 src/orientus_node.cpp.o:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_driver/CMakeFiles/orientus_node.dir/build.make orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_driver/CMakeFiles/orientus_node.dir/build.make orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o
 .PHONY : src/orientus_node.cpp.o
 
 src/orientus_node.i: src/orientus_node.cpp.i
@@ -270,7 +270,7 @@ src/orientus_node.i: src/orientus_node.cpp.i
 
 # target to preprocess a source file
 src/orientus_node.cpp.i:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_driver/CMakeFiles/orientus_node.dir/build.make orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.i
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_driver/CMakeFiles/orientus_node.dir/build.make orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.i
 .PHONY : src/orientus_node.cpp.i
 
 src/orientus_node.s: src/orientus_node.cpp.s
@@ -279,7 +279,7 @@ src/orientus_node.s: src/orientus_node.cpp.s
 
 # target to generate assembly for a file
 src/orientus_node.cpp.s:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_driver/CMakeFiles/orientus_node.dir/build.make orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.s
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_driver/CMakeFiles/orientus_node.dir/build.make orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.s
 .PHONY : src/orientus_node.cpp.s
 
 # Help Target
@@ -315,6 +315,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/vasu536/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/vasu536/river_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

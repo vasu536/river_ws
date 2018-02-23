@@ -1,8 +1,8 @@
-prefix=/home/vasu536/catkin_ws/devel
+prefix=/home/vasu536/river_ws/devel
 
 Name: rrbot_description
 Description: Description of rrbot_description
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/vasu536/catkin_ws/devel/lib 
+Libs: -L/home/vasu536/river_ws/devel/lib 
 Requires: 

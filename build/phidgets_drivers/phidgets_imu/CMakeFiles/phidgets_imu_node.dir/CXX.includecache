@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/vasu536/catkin_ws/devel/include/libphidget21/phidget21.h
+/home/vasu536/river_ws/devel/include/libphidget21/phidget21.h
 
-/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/include/phidgets_api/imu.h
+/home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/include/phidgets_api/imu.h
 phidgets_api/phidget.h
-/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/include/phidgets_api/phidgets_api/phidget.h
+/home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/include/phidgets_api/phidgets_api/phidget.h
 
-/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/include/phidgets_api/phidget.h
+/home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/include/phidgets_api/phidget.h
 libphidget21/phidget21.h
 -
 iostream
@@ -26,7 +26,7 @@ cstring
 stdio.h
 -
 
-/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_imu/include/phidgets_imu/imu_ros_i.h
+/home/vasu536/river_ws/src/phidgets_drivers/phidgets_imu/include/phidgets_imu/imu_ros_i.h
 ros/ros.h
 -
 ros/service_server.h
@@ -52,9 +52,9 @@ diagnostic_updater/publisher.h
 phidgets_api/imu.h
 -
 
-/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_imu/src/phidgets_imu_node.cpp
+/home/vasu536/river_ws/src/phidgets_drivers/phidgets_imu/src/phidgets_imu_node.cpp
 phidgets_imu/imu_ros_i.h
-/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_imu/src/phidgets_imu/imu_ros_i.h
+/home/vasu536/river_ws/src/phidgets_drivers/phidgets_imu/src/phidgets_imu/imu_ros_i.h
 
 /opt/ros/kinetic/include/diagnostic_msgs/DiagnosticArray.h
 string

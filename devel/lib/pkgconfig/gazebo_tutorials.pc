@@ -1,8 +1,8 @@
-prefix=/home/vasu536/catkin_ws/devel
+prefix=/home/vasu536/river_ws/devel
 
 Name: gazebo_tutorials
 Description: Description of gazebo_tutorials
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/vasu536/catkin_ws/devel/lib -lgazebo_tutorials
+Libs: -L/home/vasu536/river_ws/devel/lib -lgazebo_tutorials
 Requires: roscpp gazebo_ros

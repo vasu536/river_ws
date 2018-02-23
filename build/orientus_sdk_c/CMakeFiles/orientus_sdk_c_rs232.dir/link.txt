@@ -1,1 +1,1 @@
-/usr/bin/cc  -fPIC   -shared -Wl,-soname,liborientus_sdk_c_rs232.so -o /home/vasu536/catkin_ws/devel/lib/liborientus_sdk_c_rs232.so CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.o 
+/usr/bin/cc  -fPIC   -shared -Wl,-soname,liborientus_sdk_c_rs232.so -o /home/vasu536/river_ws/devel/lib/liborientus_sdk_c_rs232.so CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.o 

@@ -6,5 +6,5 @@ C_FLAGS = -fPIC
 
 C_DEFINES = -DROS_BUILD_SHARED_LIBS=1 -Dorientus_sdk_c_EXPORTS
 
-C_INCLUDES = -I/home/vasu536/catkin_ws/src/orientus_sdk_c/include/orientus_sdk_c -I/home/vasu536/catkin_ws/src/orientus_sdk_c/include/orientus_sdk_c/rs232 
+C_INCLUDES = -I/home/vasu536/river_ws/src/orientus_sdk_c/include/orientus_sdk_c -I/home/vasu536/river_ws/src/orientus_sdk_c/include/orientus_sdk_c/rs232 
 

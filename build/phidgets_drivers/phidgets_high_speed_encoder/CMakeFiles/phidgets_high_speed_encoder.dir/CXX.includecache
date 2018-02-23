@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/vasu536/catkin_ws/devel/include/libphidget21/phidget21.h
+/home/vasu536/river_ws/devel/include/libphidget21/phidget21.h
 
-/home/vasu536/catkin_ws/devel/include/phidgets_high_speed_encoder/EncoderDecimatedSpeed.h
+/home/vasu536/river_ws/devel/include/phidgets_high_speed_encoder/EncoderDecimatedSpeed.h
 string
 -
 vector
@@ -26,11 +26,11 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 
-/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/include/phidgets_api/encoder.h
+/home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/include/phidgets_api/encoder.h
 phidgets_api/phidget.h
-/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/include/phidgets_api/phidgets_api/phidget.h
+/home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/include/phidgets_api/phidgets_api/phidget.h
 
-/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/include/phidgets_api/phidget.h
+/home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/include/phidgets_api/phidget.h
 libphidget21/phidget21.h
 -
 iostream
@@ -44,7 +44,7 @@ cstring
 stdio.h
 -
 
-/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_high_speed_encoder/src/phidgets_high_speed_encoder.cpp
+/home/vasu536/river_ws/src/phidgets_drivers/phidgets_high_speed_encoder/src/phidgets_high_speed_encoder.cpp
 ros/ros.h
 -
 stdio.h
@@ -62,11 +62,11 @@ mutex
 numeric
 -
 phidgets_api/encoder.h
-/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_high_speed_encoder/src/phidgets_api/encoder.h
+/home/vasu536/river_ws/src/phidgets_drivers/phidgets_high_speed_encoder/src/phidgets_api/encoder.h
 sensor_msgs/JointState.h
 -
 phidgets_high_speed_encoder/EncoderDecimatedSpeed.h
-/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_high_speed_encoder/src/phidgets_high_speed_encoder/EncoderDecimatedSpeed.h
+/home/vasu536/river_ws/src/phidgets_drivers/phidgets_high_speed_encoder/src/phidgets_high_speed_encoder/EncoderDecimatedSpeed.h
 
 /opt/ros/kinetic/include/ros/advertise_options.h
 ros/forwards.h

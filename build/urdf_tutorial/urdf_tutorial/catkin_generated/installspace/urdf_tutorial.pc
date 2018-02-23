@@ -1,8 +1,8 @@
-prefix=/home/vasu536/catkin_ws/install
+prefix=/home/vasu536/river_ws/install
 
 Name: urdf_tutorial
 Description: Description of urdf_tutorial
 Version: 0.3.0
 Cflags: 
-Libs: -L/home/vasu536/catkin_ws/install/lib 
+Libs: -L/home/vasu536/river_ws/install/lib 
 Requires: 

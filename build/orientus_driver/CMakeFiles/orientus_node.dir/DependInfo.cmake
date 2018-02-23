@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/vasu536/catkin_ws/src/orientus_driver/src/orientus_node.cpp" "/home/vasu536/catkin_ws/build/orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o"
+  "/home/vasu536/river_ws/src/orientus_driver/src/orientus_node.cpp" "/home/vasu536/river_ws/build/orientus_driver/CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,15 +17,15 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/vasu536/catkin_ws/src/orientus_sdk_c/include"
+  "/home/vasu536/river_ws/src/orientus_sdk_c/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/vasu536/catkin_ws/build/orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/DependInfo.cmake"
-  "/home/vasu536/catkin_ws/build/orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/DependInfo.cmake"
+  "/home/vasu536/river_ws/build/orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/DependInfo.cmake"
+  "/home/vasu536/river_ws/build/orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -1,7 +1,7 @@
 # Make file names absolute:
 #
-get_filename_component(filename "/home/vasu536/catkin_ws/build/phidgets_drivers/libphidget21/EP_libphidget21-prefix/src/libphidget_2.1.8.20151217.tar.gz" ABSOLUTE)
-get_filename_component(directory "/home/vasu536/catkin_ws/build/phidgets_drivers/libphidget21/libphidget21-src" ABSOLUTE)
+get_filename_component(filename "/home/vasu536/river_ws/build/phidgets_drivers/libphidget21/EP_libphidget21-prefix/src/libphidget_2.1.8.20151217.tar.gz" ABSOLUTE)
+get_filename_component(directory "/home/vasu536/river_ws/build/phidgets_drivers/libphidget21/libphidget21-src" ABSOLUTE)
 
 message(STATUS "extracting...
      src='${filename}'

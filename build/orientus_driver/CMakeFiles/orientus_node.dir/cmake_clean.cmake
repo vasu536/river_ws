@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/orientus_node.dir/src/orientus_node.cpp.o"
-  "/home/vasu536/catkin_ws/devel/lib/orientus_driver/orientus_node.pdb"
-  "/home/vasu536/catkin_ws/devel/lib/orientus_driver/orientus_node"
+  "/home/vasu536/river_ws/devel/lib/orientus_driver/orientus_node.pdb"
+  "/home/vasu536/river_ws/devel/lib/orientus_driver/orientus_node"
 )
 
 # Per-language clean rules from dependency scanning.

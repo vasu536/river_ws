@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vasu536/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/vasu536/river_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vasu536/catkin_ws/build
+CMAKE_BINARY_DIR = /home/vasu536/river_ws/build
 
 # Utility rule file for tf_generate_messages_eus.
 
@@ -63,10 +63,10 @@ gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/tf_generate_messages_eus.dir/
 .PHONY : gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/tf_generate_messages_eus.dir/build
 
 gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/tf_generate_messages_eus.dir/clean:
-	cd /home/vasu536/catkin_ws/build/gazebo_ros_demos/custom_plugin_tutorial && $(CMAKE_COMMAND) -P CMakeFiles/tf_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/vasu536/river_ws/build/gazebo_ros_demos/custom_plugin_tutorial && $(CMAKE_COMMAND) -P CMakeFiles/tf_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/tf_generate_messages_eus.dir/clean
 
 gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/tf_generate_messages_eus.dir/depend:
-	cd /home/vasu536/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasu536/catkin_ws/src /home/vasu536/catkin_ws/src/gazebo_ros_demos/custom_plugin_tutorial /home/vasu536/catkin_ws/build /home/vasu536/catkin_ws/build/gazebo_ros_demos/custom_plugin_tutorial /home/vasu536/catkin_ws/build/gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/tf_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vasu536/river_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasu536/river_ws/src /home/vasu536/river_ws/src/gazebo_ros_demos/custom_plugin_tutorial /home/vasu536/river_ws/build /home/vasu536/river_ws/build/gazebo_ros_demos/custom_plugin_tutorial /home/vasu536/river_ws/build/gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/tf_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/tf_generate_messages_eus.dir/depend
 

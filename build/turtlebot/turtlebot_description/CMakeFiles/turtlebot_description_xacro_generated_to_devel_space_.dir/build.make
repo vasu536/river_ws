@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vasu536/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/vasu536/river_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vasu536/catkin_ws/build
+CMAKE_BINARY_DIR = /home/vasu536/river_ws/build
 
 # Utility rule file for turtlebot_description_xacro_generated_to_devel_space_.
 
@@ -63,10 +63,10 @@ turtlebot/turtlebot_description/CMakeFiles/turtlebot_description_xacro_generated
 .PHONY : turtlebot/turtlebot_description/CMakeFiles/turtlebot_description_xacro_generated_to_devel_space_.dir/build
 
 turtlebot/turtlebot_description/CMakeFiles/turtlebot_description_xacro_generated_to_devel_space_.dir/clean:
-	cd /home/vasu536/catkin_ws/build/turtlebot/turtlebot_description && $(CMAKE_COMMAND) -P CMakeFiles/turtlebot_description_xacro_generated_to_devel_space_.dir/cmake_clean.cmake
+	cd /home/vasu536/river_ws/build/turtlebot/turtlebot_description && $(CMAKE_COMMAND) -P CMakeFiles/turtlebot_description_xacro_generated_to_devel_space_.dir/cmake_clean.cmake
 .PHONY : turtlebot/turtlebot_description/CMakeFiles/turtlebot_description_xacro_generated_to_devel_space_.dir/clean
 
 turtlebot/turtlebot_description/CMakeFiles/turtlebot_description_xacro_generated_to_devel_space_.dir/depend:
-	cd /home/vasu536/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasu536/catkin_ws/src /home/vasu536/catkin_ws/src/turtlebot/turtlebot_description /home/vasu536/catkin_ws/build /home/vasu536/catkin_ws/build/turtlebot/turtlebot_description /home/vasu536/catkin_ws/build/turtlebot/turtlebot_description/CMakeFiles/turtlebot_description_xacro_generated_to_devel_space_.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vasu536/river_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasu536/river_ws/src /home/vasu536/river_ws/src/turtlebot/turtlebot_description /home/vasu536/river_ws/build /home/vasu536/river_ws/build/turtlebot/turtlebot_description /home/vasu536/river_ws/build/turtlebot/turtlebot_description/CMakeFiles/turtlebot_description_xacro_generated_to_devel_space_.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : turtlebot/turtlebot_description/CMakeFiles/turtlebot_description_xacro_generated_to_devel_space_.dir/depend
 

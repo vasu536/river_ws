@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/vasu536/catkin_ws/src/quadrant_locater/src/position_calculator_node.cpp
+/home/vasu536/river_ws/src/quadrant_locater/src/position_calculator_node.cpp
 stdlib.h
 -
 stdio.h
@@ -22,13 +22,13 @@ iostream
 exception
 -
 ros/ros.h
-/home/vasu536/catkin_ws/src/quadrant_locater/src/ros/ros.h
+/home/vasu536/river_ws/src/quadrant_locater/src/ros/ros.h
 sensor_msgs/Imu.h
-/home/vasu536/catkin_ws/src/quadrant_locater/src/sensor_msgs/Imu.h
+/home/vasu536/river_ws/src/quadrant_locater/src/sensor_msgs/Imu.h
 geometry_msgs/Vector3.h
-/home/vasu536/catkin_ws/src/quadrant_locater/src/geometry_msgs/Vector3.h
+/home/vasu536/river_ws/src/quadrant_locater/src/geometry_msgs/Vector3.h
 std_msgs/Float32.h
-/home/vasu536/catkin_ws/src/quadrant_locater/src/std_msgs/Float32.h
+/home/vasu536/river_ws/src/quadrant_locater/src/std_msgs/Float32.h
 
 /opt/ros/kinetic/include/geometry_msgs/Quaternion.h
 string

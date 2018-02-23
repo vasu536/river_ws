@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vasu536/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/vasu536/river_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vasu536/catkin_ws/build
+CMAKE_BINARY_DIR = /home/vasu536/river_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/vasu536/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vasu536/catkin_ws/build/CMakeFiles /home/vasu536/catkin_ws/build/orientus_sdk_c/CMakeFiles/progress.marks
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_sdk_c/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vasu536/catkin_ws/build/CMakeFiles 0
+	cd /home/vasu536/river_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vasu536/river_ws/build/CMakeFiles /home/vasu536/river_ws/build/orientus_sdk_c/CMakeFiles/progress.marks
+	cd /home/vasu536/river_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_sdk_c/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vasu536/river_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_sdk_c/clean
+	cd /home/vasu536/river_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_sdk_c/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_sdk_c/preinstall
+	cd /home/vasu536/river_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_sdk_c/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_sdk_c/preinstall
+	cd /home/vasu536/river_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_sdk_c/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/vasu536/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/vasu536/river_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/rule:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/rule
+	cd /home/vasu536/river_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/rule
 .PHONY : orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/rule
 
 # Convenience name for target.
@@ -177,12 +177,12 @@ orientus_sdk_c: orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/rule
 
 # fast build rule for target.
 orientus_sdk_c/fast:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/build.make orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/build
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/build.make orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/build
 .PHONY : orientus_sdk_c/fast
 
 # Convenience name for target.
 orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/rule:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/rule
+	cd /home/vasu536/river_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/rule
 .PHONY : orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/rule
 
 # Convenience name for target.
@@ -192,12 +192,12 @@ orientus_sdk_c_rs232: orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/rule
 
 # fast build rule for target.
 orientus_sdk_c_rs232/fast:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/build.make orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/build
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/build.make orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/build
 .PHONY : orientus_sdk_c_rs232/fast
 
 # Convenience name for target.
 orientus_sdk_c/CMakeFiles/packet_example.dir/rule:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_sdk_c/CMakeFiles/packet_example.dir/rule
+	cd /home/vasu536/river_ws/build && $(MAKE) -f CMakeFiles/Makefile2 orientus_sdk_c/CMakeFiles/packet_example.dir/rule
 .PHONY : orientus_sdk_c/CMakeFiles/packet_example.dir/rule
 
 # Convenience name for target.
@@ -207,7 +207,7 @@ packet_example: orientus_sdk_c/CMakeFiles/packet_example.dir/rule
 
 # fast build rule for target.
 packet_example/fast:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/packet_example.dir/build.make orientus_sdk_c/CMakeFiles/packet_example.dir/build
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/packet_example.dir/build.make orientus_sdk_c/CMakeFiles/packet_example.dir/build
 .PHONY : packet_example/fast
 
 src/an_packet_protocol.o: src/an_packet_protocol.c.o
@@ -216,7 +216,7 @@ src/an_packet_protocol.o: src/an_packet_protocol.c.o
 
 # target to build an object file
 src/an_packet_protocol.c.o:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/build.make orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.o
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/build.make orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.o
 .PHONY : src/an_packet_protocol.c.o
 
 src/an_packet_protocol.i: src/an_packet_protocol.c.i
@@ -225,7 +225,7 @@ src/an_packet_protocol.i: src/an_packet_protocol.c.i
 
 # target to preprocess a source file
 src/an_packet_protocol.c.i:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/build.make orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.i
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/build.make orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.i
 .PHONY : src/an_packet_protocol.c.i
 
 src/an_packet_protocol.s: src/an_packet_protocol.c.s
@@ -234,7 +234,7 @@ src/an_packet_protocol.s: src/an_packet_protocol.c.s
 
 # target to generate assembly for a file
 src/an_packet_protocol.c.s:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/build.make orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.s
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/build.make orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.s
 .PHONY : src/an_packet_protocol.c.s
 
 src/orientus_packets.o: src/orientus_packets.c.o
@@ -243,7 +243,7 @@ src/orientus_packets.o: src/orientus_packets.c.o
 
 # target to build an object file
 src/orientus_packets.c.o:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/build.make orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.o
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/build.make orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.o
 .PHONY : src/orientus_packets.c.o
 
 src/orientus_packets.i: src/orientus_packets.c.i
@@ -252,7 +252,7 @@ src/orientus_packets.i: src/orientus_packets.c.i
 
 # target to preprocess a source file
 src/orientus_packets.c.i:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/build.make orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.i
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/build.make orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.i
 .PHONY : src/orientus_packets.c.i
 
 src/orientus_packets.s: src/orientus_packets.c.s
@@ -261,7 +261,7 @@ src/orientus_packets.s: src/orientus_packets.c.s
 
 # target to generate assembly for a file
 src/orientus_packets.c.s:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/build.make orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.s
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/build.make orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.s
 .PHONY : src/orientus_packets.c.s
 
 src/packet_example.o: src/packet_example.c.o
@@ -270,7 +270,7 @@ src/packet_example.o: src/packet_example.c.o
 
 # target to build an object file
 src/packet_example.c.o:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/packet_example.dir/build.make orientus_sdk_c/CMakeFiles/packet_example.dir/src/packet_example.c.o
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/packet_example.dir/build.make orientus_sdk_c/CMakeFiles/packet_example.dir/src/packet_example.c.o
 .PHONY : src/packet_example.c.o
 
 src/packet_example.i: src/packet_example.c.i
@@ -279,7 +279,7 @@ src/packet_example.i: src/packet_example.c.i
 
 # target to preprocess a source file
 src/packet_example.c.i:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/packet_example.dir/build.make orientus_sdk_c/CMakeFiles/packet_example.dir/src/packet_example.c.i
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/packet_example.dir/build.make orientus_sdk_c/CMakeFiles/packet_example.dir/src/packet_example.c.i
 .PHONY : src/packet_example.c.i
 
 src/packet_example.s: src/packet_example.c.s
@@ -288,7 +288,7 @@ src/packet_example.s: src/packet_example.c.s
 
 # target to generate assembly for a file
 src/packet_example.c.s:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/packet_example.dir/build.make orientus_sdk_c/CMakeFiles/packet_example.dir/src/packet_example.c.s
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/packet_example.dir/build.make orientus_sdk_c/CMakeFiles/packet_example.dir/src/packet_example.c.s
 .PHONY : src/packet_example.c.s
 
 src/rs232/rs232.o: src/rs232/rs232.c.o
@@ -297,7 +297,7 @@ src/rs232/rs232.o: src/rs232/rs232.c.o
 
 # target to build an object file
 src/rs232/rs232.c.o:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/build.make orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.o
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/build.make orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.o
 .PHONY : src/rs232/rs232.c.o
 
 src/rs232/rs232.i: src/rs232/rs232.c.i
@@ -306,7 +306,7 @@ src/rs232/rs232.i: src/rs232/rs232.c.i
 
 # target to preprocess a source file
 src/rs232/rs232.c.i:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/build.make orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.i
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/build.make orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.i
 .PHONY : src/rs232/rs232.c.i
 
 src/rs232/rs232.s: src/rs232/rs232.c.s
@@ -315,7 +315,7 @@ src/rs232/rs232.s: src/rs232/rs232.c.s
 
 # target to generate assembly for a file
 src/rs232/rs232.c.s:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/build.make orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.s
+	cd /home/vasu536/river_ws/build && $(MAKE) -f orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/build.make orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.s
 .PHONY : src/rs232/rs232.c.s
 
 # Help Target
@@ -357,6 +357,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/vasu536/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/vasu536/river_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

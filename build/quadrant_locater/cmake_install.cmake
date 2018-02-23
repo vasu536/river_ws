@@ -1,8 +1,8 @@
-# Install script for directory: /home/vasu536/catkin_ws/src/quadrant_locater
+# Install script for directory: /home/vasu536/river_ws/src/quadrant_locater
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/vasu536/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/vasu536/river_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,21 +33,21 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vasu536/catkin_ws/build/quadrant_locater/catkin_generated/installspace/quadrant_locater.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vasu536/river_ws/build/quadrant_locater/catkin_generated/installspace/quadrant_locater.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/quadrant_locater/cmake" TYPE FILE FILES
-    "/home/vasu536/catkin_ws/build/quadrant_locater/catkin_generated/installspace/quadrant_locaterConfig.cmake"
-    "/home/vasu536/catkin_ws/build/quadrant_locater/catkin_generated/installspace/quadrant_locaterConfig-version.cmake"
+    "/home/vasu536/river_ws/build/quadrant_locater/catkin_generated/installspace/quadrant_locaterConfig.cmake"
+    "/home/vasu536/river_ws/build/quadrant_locater/catkin_generated/installspace/quadrant_locaterConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/quadrant_locater" TYPE FILE FILES "/home/vasu536/catkin_ws/src/quadrant_locater/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/quadrant_locater" TYPE FILE FILES "/home/vasu536/river_ws/src/quadrant_locater/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quadrant_locater" TYPE DIRECTORY FILES "/home/vasu536/catkin_ws/src/quadrant_locater/include/" FILES_MATCHING REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quadrant_locater" TYPE DIRECTORY FILES "/home/vasu536/river_ws/src/quadrant_locater/include/" FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 

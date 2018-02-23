@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/vasu536/catkin_ws/devel/include/libphidget21/phidget21.h
+/home/vasu536/river_ws/devel/include/libphidget21/phidget21.h
 
-/home/vasu536/catkin_ws/devel/include/phidgets_ik/SetDigitalOutput.h
+/home/vasu536/river_ws/devel/include/phidgets_ik/SetDigitalOutput.h
 ros/service_traits.h
 -
 phidgets_ik/SetDigitalOutputRequest.h
@@ -16,7 +16,7 @@ phidgets_ik/SetDigitalOutputRequest.h
 phidgets_ik/SetDigitalOutputResponse.h
 -
 
-/home/vasu536/catkin_ws/devel/include/phidgets_ik/SetDigitalOutputRequest.h
+/home/vasu536/river_ws/devel/include/phidgets_ik/SetDigitalOutputRequest.h
 string
 -
 vector
@@ -32,7 +32,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/vasu536/catkin_ws/devel/include/phidgets_ik/SetDigitalOutputResponse.h
+/home/vasu536/river_ws/devel/include/phidgets_ik/SetDigitalOutputResponse.h
 string
 -
 vector
@@ -48,11 +48,11 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/include/phidgets_api/ik.h
+/home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/include/phidgets_api/ik.h
 phidgets_api/phidget.h
-/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/include/phidgets_api/phidgets_api/phidget.h
+/home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/include/phidgets_api/phidgets_api/phidget.h
 
-/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/include/phidgets_api/phidget.h
+/home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/include/phidgets_api/phidget.h
 libphidget21/phidget21.h
 -
 iostream
@@ -66,7 +66,7 @@ cstring
 stdio.h
 -
 
-/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_ik/include/phidgets_ik/ik_ros_i.h
+/home/vasu536/river_ws/src/phidgets_drivers/phidgets_ik/include/phidgets_ik/ik_ros_i.h
 ros/ros.h
 -
 phidgets_api/ik.h
@@ -76,15 +76,15 @@ std_msgs/Bool.h
 std_msgs/Float32.h
 -
 phidgets_ik/SetDigitalOutput.h
-/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_ik/include/phidgets_ik/phidgets_ik/SetDigitalOutput.h
+/home/vasu536/river_ws/src/phidgets_drivers/phidgets_ik/include/phidgets_ik/phidgets_ik/SetDigitalOutput.h
 vector
 -
 boost/shared_ptr.hpp
 -
 
-/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_ik/src/ik_ros_i.cpp
+/home/vasu536/river_ws/src/phidgets_drivers/phidgets_ik/src/ik_ros_i.cpp
 phidgets_ik/ik_ros_i.h
-/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_ik/src/phidgets_ik/ik_ros_i.h
+/home/vasu536/river_ws/src/phidgets_drivers/phidgets_ik/src/phidgets_ik/ik_ros_i.h
 
 /opt/ros/kinetic/include/ros/advertise_options.h
 ros/forwards.h

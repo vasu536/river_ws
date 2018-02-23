@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/phidgets_ik_generate_messages_lisp"
-  "/home/vasu536/catkin_ws/devel/share/common-lisp/ros/phidgets_ik/srv/SetDigitalOutput.lisp"
+  "/home/vasu536/river_ws/devel/share/common-lisp/ros/phidgets_ik/srv/SetDigitalOutput.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

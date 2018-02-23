@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vasu536/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/vasu536/river_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vasu536/catkin_ws/build
+CMAKE_BINARY_DIR = /home/vasu536/river_ws/build
 
 # Include any dependencies generated for this target.
 include phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/depend.make
@@ -58,17 +58,17 @@ include phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/progress.make
 include phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/flags.make
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/encoder.cpp.o: phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/flags.make
-phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/encoder.cpp.o: /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/encoder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vasu536/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/encoder.cpp.o"
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phidgets_api.dir/src/encoder.cpp.o -c /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/encoder.cpp
+phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/encoder.cpp.o: /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/encoder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vasu536/river_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/encoder.cpp.o"
+	cd /home/vasu536/river_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phidgets_api.dir/src/encoder.cpp.o -c /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/encoder.cpp
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/encoder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/phidgets_api.dir/src/encoder.cpp.i"
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/encoder.cpp > CMakeFiles/phidgets_api.dir/src/encoder.cpp.i
+	cd /home/vasu536/river_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/encoder.cpp > CMakeFiles/phidgets_api.dir/src/encoder.cpp.i
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/encoder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/phidgets_api.dir/src/encoder.cpp.s"
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/encoder.cpp -o CMakeFiles/phidgets_api.dir/src/encoder.cpp.s
+	cd /home/vasu536/river_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/encoder.cpp -o CMakeFiles/phidgets_api.dir/src/encoder.cpp.s
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/encoder.cpp.o.requires:
 
@@ -82,17 +82,17 @@ phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/encoder.cpp.o.prov
 
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/imu.cpp.o: phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/flags.make
-phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/imu.cpp.o: /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/imu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vasu536/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/imu.cpp.o"
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phidgets_api.dir/src/imu.cpp.o -c /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/imu.cpp
+phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/imu.cpp.o: /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/imu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vasu536/river_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/imu.cpp.o"
+	cd /home/vasu536/river_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phidgets_api.dir/src/imu.cpp.o -c /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/imu.cpp
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/imu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/phidgets_api.dir/src/imu.cpp.i"
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/imu.cpp > CMakeFiles/phidgets_api.dir/src/imu.cpp.i
+	cd /home/vasu536/river_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/imu.cpp > CMakeFiles/phidgets_api.dir/src/imu.cpp.i
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/imu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/phidgets_api.dir/src/imu.cpp.s"
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/imu.cpp -o CMakeFiles/phidgets_api.dir/src/imu.cpp.s
+	cd /home/vasu536/river_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/imu.cpp -o CMakeFiles/phidgets_api.dir/src/imu.cpp.s
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/imu.cpp.o.requires:
 
@@ -106,17 +106,17 @@ phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/imu.cpp.o.provides
 
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ik.cpp.o: phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/flags.make
-phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ik.cpp.o: /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/ik.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vasu536/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ik.cpp.o"
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phidgets_api.dir/src/ik.cpp.o -c /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/ik.cpp
+phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ik.cpp.o: /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/ik.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vasu536/river_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ik.cpp.o"
+	cd /home/vasu536/river_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phidgets_api.dir/src/ik.cpp.o -c /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/ik.cpp
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ik.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/phidgets_api.dir/src/ik.cpp.i"
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/ik.cpp > CMakeFiles/phidgets_api.dir/src/ik.cpp.i
+	cd /home/vasu536/river_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/ik.cpp > CMakeFiles/phidgets_api.dir/src/ik.cpp.i
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ik.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/phidgets_api.dir/src/ik.cpp.s"
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/ik.cpp -o CMakeFiles/phidgets_api.dir/src/ik.cpp.s
+	cd /home/vasu536/river_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/ik.cpp -o CMakeFiles/phidgets_api.dir/src/ik.cpp.s
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ik.cpp.o.requires:
 
@@ -130,17 +130,17 @@ phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ik.cpp.o.provides.
 
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ir.cpp.o: phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/flags.make
-phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ir.cpp.o: /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/ir.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vasu536/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ir.cpp.o"
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phidgets_api.dir/src/ir.cpp.o -c /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/ir.cpp
+phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ir.cpp.o: /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/ir.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vasu536/river_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ir.cpp.o"
+	cd /home/vasu536/river_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phidgets_api.dir/src/ir.cpp.o -c /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/ir.cpp
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ir.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/phidgets_api.dir/src/ir.cpp.i"
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/ir.cpp > CMakeFiles/phidgets_api.dir/src/ir.cpp.i
+	cd /home/vasu536/river_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/ir.cpp > CMakeFiles/phidgets_api.dir/src/ir.cpp.i
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ir.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/phidgets_api.dir/src/ir.cpp.s"
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/ir.cpp -o CMakeFiles/phidgets_api.dir/src/ir.cpp.s
+	cd /home/vasu536/river_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/ir.cpp -o CMakeFiles/phidgets_api.dir/src/ir.cpp.s
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ir.cpp.o.requires:
 
@@ -154,17 +154,17 @@ phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ir.cpp.o.provides.
 
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/motor.cpp.o: phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/flags.make
-phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/motor.cpp.o: /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/motor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vasu536/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/motor.cpp.o"
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phidgets_api.dir/src/motor.cpp.o -c /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/motor.cpp
+phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/motor.cpp.o: /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/motor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vasu536/river_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/motor.cpp.o"
+	cd /home/vasu536/river_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phidgets_api.dir/src/motor.cpp.o -c /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/motor.cpp
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/motor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/phidgets_api.dir/src/motor.cpp.i"
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/motor.cpp > CMakeFiles/phidgets_api.dir/src/motor.cpp.i
+	cd /home/vasu536/river_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/motor.cpp > CMakeFiles/phidgets_api.dir/src/motor.cpp.i
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/motor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/phidgets_api.dir/src/motor.cpp.s"
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/motor.cpp -o CMakeFiles/phidgets_api.dir/src/motor.cpp.s
+	cd /home/vasu536/river_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/motor.cpp -o CMakeFiles/phidgets_api.dir/src/motor.cpp.s
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/motor.cpp.o.requires:
 
@@ -178,17 +178,17 @@ phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/motor.cpp.o.provid
 
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/phidget.cpp.o: phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/flags.make
-phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/phidget.cpp.o: /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/phidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vasu536/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/phidget.cpp.o"
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phidgets_api.dir/src/phidget.cpp.o -c /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/phidget.cpp
+phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/phidget.cpp.o: /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/phidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vasu536/river_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/phidget.cpp.o"
+	cd /home/vasu536/river_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/phidgets_api.dir/src/phidget.cpp.o -c /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/phidget.cpp
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/phidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/phidgets_api.dir/src/phidget.cpp.i"
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/phidget.cpp > CMakeFiles/phidgets_api.dir/src/phidget.cpp.i
+	cd /home/vasu536/river_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/phidget.cpp > CMakeFiles/phidgets_api.dir/src/phidget.cpp.i
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/phidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/phidgets_api.dir/src/phidget.cpp.s"
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/src/phidget.cpp -o CMakeFiles/phidgets_api.dir/src/phidget.cpp.s
+	cd /home/vasu536/river_ws/build/phidgets_drivers/phidgets_api && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/src/phidget.cpp -o CMakeFiles/phidgets_api.dir/src/phidget.cpp.s
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/phidget.cpp.o.requires:
 
@@ -213,20 +213,20 @@ phidgets_api_OBJECTS = \
 # External object files for target phidgets_api
 phidgets_api_EXTERNAL_OBJECTS =
 
-/home/vasu536/catkin_ws/devel/lib/libphidgets_api.so: phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/encoder.cpp.o
-/home/vasu536/catkin_ws/devel/lib/libphidgets_api.so: phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/imu.cpp.o
-/home/vasu536/catkin_ws/devel/lib/libphidgets_api.so: phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ik.cpp.o
-/home/vasu536/catkin_ws/devel/lib/libphidgets_api.so: phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ir.cpp.o
-/home/vasu536/catkin_ws/devel/lib/libphidgets_api.so: phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/motor.cpp.o
-/home/vasu536/catkin_ws/devel/lib/libphidgets_api.so: phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/phidget.cpp.o
-/home/vasu536/catkin_ws/devel/lib/libphidgets_api.so: phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make
-/home/vasu536/catkin_ws/devel/lib/libphidgets_api.so: /home/vasu536/catkin_ws/devel/lib/libphidget21.so
-/home/vasu536/catkin_ws/devel/lib/libphidgets_api.so: phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vasu536/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library /home/vasu536/catkin_ws/devel/lib/libphidgets_api.so"
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_api && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/phidgets_api.dir/link.txt --verbose=$(VERBOSE)
+/home/vasu536/river_ws/devel/lib/libphidgets_api.so: phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/encoder.cpp.o
+/home/vasu536/river_ws/devel/lib/libphidgets_api.so: phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/imu.cpp.o
+/home/vasu536/river_ws/devel/lib/libphidgets_api.so: phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ik.cpp.o
+/home/vasu536/river_ws/devel/lib/libphidgets_api.so: phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ir.cpp.o
+/home/vasu536/river_ws/devel/lib/libphidgets_api.so: phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/motor.cpp.o
+/home/vasu536/river_ws/devel/lib/libphidgets_api.so: phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/phidget.cpp.o
+/home/vasu536/river_ws/devel/lib/libphidgets_api.so: phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make
+/home/vasu536/river_ws/devel/lib/libphidgets_api.so: /home/vasu536/river_ws/devel/lib/libphidget21.so
+/home/vasu536/river_ws/devel/lib/libphidgets_api.so: phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vasu536/river_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library /home/vasu536/river_ws/devel/lib/libphidgets_api.so"
+	cd /home/vasu536/river_ws/build/phidgets_drivers/phidgets_api && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/phidgets_api.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build: /home/vasu536/catkin_ws/devel/lib/libphidgets_api.so
+phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build: /home/vasu536/river_ws/devel/lib/libphidgets_api.so
 
 .PHONY : phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build
 
@@ -240,10 +240,10 @@ phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/requires: phidgets_dri
 .PHONY : phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/requires
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/clean:
-	cd /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_api && $(CMAKE_COMMAND) -P CMakeFiles/phidgets_api.dir/cmake_clean.cmake
+	cd /home/vasu536/river_ws/build/phidgets_drivers/phidgets_api && $(CMAKE_COMMAND) -P CMakeFiles/phidgets_api.dir/cmake_clean.cmake
 .PHONY : phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/clean
 
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/depend:
-	cd /home/vasu536/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasu536/catkin_ws/src /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api /home/vasu536/catkin_ws/build /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_api /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vasu536/river_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasu536/river_ws/src /home/vasu536/river_ws/src/phidgets_drivers/phidgets_api /home/vasu536/river_ws/build /home/vasu536/river_ws/build/phidgets_drivers/phidgets_api /home/vasu536/river_ws/build/phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/depend
 

@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -Wall
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"phidgets_ik\" -Dphidgets_ik_EXPORTS
 
-CXX_INCLUDES = -I/home/vasu536/catkin_ws/devel/include -I/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_ik/include -I/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/vasu536/river_ws/devel/include -I/home/vasu536/river_ws/src/phidgets_drivers/phidgets_ik/include -I/home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

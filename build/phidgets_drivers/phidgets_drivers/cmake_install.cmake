@@ -1,8 +1,8 @@
-# Install script for directory: /home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_drivers
+# Install script for directory: /home/vasu536/river_ws/src/phidgets_drivers/phidgets_drivers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/vasu536/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/vasu536/river_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,6 +33,6 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/phidgets_drivers" TYPE FILE FILES "/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_drivers/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/phidgets_drivers" TYPE FILE FILES "/home/vasu536/river_ws/src/phidgets_drivers/phidgets_drivers/package.xml")
 endif()
 

@@ -1,8 +1,8 @@
-prefix=/home/vasu536/catkin_ws/devel
+prefix=/home/vasu536/river_ws/devel
 
 Name: phidgets_api
 Description: Description of phidgets_api
 Version: 0.7.5
-Cflags: -I/home/vasu536/catkin_ws/src/phidgets_drivers/phidgets_api/include
-Libs: -L/home/vasu536/catkin_ws/devel/lib -lphidgets_api
+Cflags: -I/home/vasu536/river_ws/src/phidgets_drivers/phidgets_api/include
+Libs: -L/home/vasu536/river_ws/devel/lib -lphidgets_api
 Requires: libphidget21

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vasu536/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/vasu536/river_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vasu536/catkin_ws/build
+CMAKE_BINARY_DIR = /home/vasu536/river_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/vasu536/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vasu536/catkin_ws/build/CMakeFiles /home/vasu536/catkin_ws/build/phidgets_drivers/phidgets_api/CMakeFiles/progress.marks
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 phidgets_drivers/phidgets_api/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vasu536/catkin_ws/build/CMakeFiles 0
+	cd /home/vasu536/river_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/vasu536/river_ws/build/CMakeFiles /home/vasu536/river_ws/build/phidgets_drivers/phidgets_api/CMakeFiles/progress.marks
+	cd /home/vasu536/river_ws/build && $(MAKE) -f CMakeFiles/Makefile2 phidgets_drivers/phidgets_api/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vasu536/river_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 phidgets_drivers/phidgets_api/clean
+	cd /home/vasu536/river_ws/build && $(MAKE) -f CMakeFiles/Makefile2 phidgets_drivers/phidgets_api/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,22 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 phidgets_drivers/phidgets_api/preinstall
+	cd /home/vasu536/river_ws/build && $(MAKE) -f CMakeFiles/Makefile2 phidgets_drivers/phidgets_api/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 phidgets_drivers/phidgets_api/preinstall
+	cd /home/vasu536/river_ws/build && $(MAKE) -f CMakeFiles/Makefile2 phidgets_drivers/phidgets_api/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/vasu536/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/vasu536/river_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/rule:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/rule
+	cd /home/vasu536/river_ws/build && $(MAKE) -f CMakeFiles/Makefile2 phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/rule
 .PHONY : phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/rule
 
 # Convenience name for target.
@@ -177,7 +177,7 @@ phidgets_api: phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/rule
 
 # fast build rule for target.
 phidgets_api/fast:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build
+	cd /home/vasu536/river_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build
 .PHONY : phidgets_api/fast
 
 src/encoder.o: src/encoder.cpp.o
@@ -186,7 +186,7 @@ src/encoder.o: src/encoder.cpp.o
 
 # target to build an object file
 src/encoder.cpp.o:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/encoder.cpp.o
+	cd /home/vasu536/river_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/encoder.cpp.o
 .PHONY : src/encoder.cpp.o
 
 src/encoder.i: src/encoder.cpp.i
@@ -195,7 +195,7 @@ src/encoder.i: src/encoder.cpp.i
 
 # target to preprocess a source file
 src/encoder.cpp.i:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/encoder.cpp.i
+	cd /home/vasu536/river_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/encoder.cpp.i
 .PHONY : src/encoder.cpp.i
 
 src/encoder.s: src/encoder.cpp.s
@@ -204,7 +204,7 @@ src/encoder.s: src/encoder.cpp.s
 
 # target to generate assembly for a file
 src/encoder.cpp.s:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/encoder.cpp.s
+	cd /home/vasu536/river_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/encoder.cpp.s
 .PHONY : src/encoder.cpp.s
 
 src/ik.o: src/ik.cpp.o
@@ -213,7 +213,7 @@ src/ik.o: src/ik.cpp.o
 
 # target to build an object file
 src/ik.cpp.o:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ik.cpp.o
+	cd /home/vasu536/river_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ik.cpp.o
 .PHONY : src/ik.cpp.o
 
 src/ik.i: src/ik.cpp.i
@@ -222,7 +222,7 @@ src/ik.i: src/ik.cpp.i
 
 # target to preprocess a source file
 src/ik.cpp.i:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ik.cpp.i
+	cd /home/vasu536/river_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ik.cpp.i
 .PHONY : src/ik.cpp.i
 
 src/ik.s: src/ik.cpp.s
@@ -231,7 +231,7 @@ src/ik.s: src/ik.cpp.s
 
 # target to generate assembly for a file
 src/ik.cpp.s:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ik.cpp.s
+	cd /home/vasu536/river_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ik.cpp.s
 .PHONY : src/ik.cpp.s
 
 src/imu.o: src/imu.cpp.o
@@ -240,7 +240,7 @@ src/imu.o: src/imu.cpp.o
 
 # target to build an object file
 src/imu.cpp.o:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/imu.cpp.o
+	cd /home/vasu536/river_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/imu.cpp.o
 .PHONY : src/imu.cpp.o
 
 src/imu.i: src/imu.cpp.i
@@ -249,7 +249,7 @@ src/imu.i: src/imu.cpp.i
 
 # target to preprocess a source file
 src/imu.cpp.i:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/imu.cpp.i
+	cd /home/vasu536/river_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/imu.cpp.i
 .PHONY : src/imu.cpp.i
 
 src/imu.s: src/imu.cpp.s
@@ -258,7 +258,7 @@ src/imu.s: src/imu.cpp.s
 
 # target to generate assembly for a file
 src/imu.cpp.s:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/imu.cpp.s
+	cd /home/vasu536/river_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/imu.cpp.s
 .PHONY : src/imu.cpp.s
 
 src/ir.o: src/ir.cpp.o
@@ -267,7 +267,7 @@ src/ir.o: src/ir.cpp.o
 
 # target to build an object file
 src/ir.cpp.o:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ir.cpp.o
+	cd /home/vasu536/river_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ir.cpp.o
 .PHONY : src/ir.cpp.o
 
 src/ir.i: src/ir.cpp.i
@@ -276,7 +276,7 @@ src/ir.i: src/ir.cpp.i
 
 # target to preprocess a source file
 src/ir.cpp.i:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ir.cpp.i
+	cd /home/vasu536/river_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ir.cpp.i
 .PHONY : src/ir.cpp.i
 
 src/ir.s: src/ir.cpp.s
@@ -285,7 +285,7 @@ src/ir.s: src/ir.cpp.s
 
 # target to generate assembly for a file
 src/ir.cpp.s:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ir.cpp.s
+	cd /home/vasu536/river_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/ir.cpp.s
 .PHONY : src/ir.cpp.s
 
 src/motor.o: src/motor.cpp.o
@@ -294,7 +294,7 @@ src/motor.o: src/motor.cpp.o
 
 # target to build an object file
 src/motor.cpp.o:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/motor.cpp.o
+	cd /home/vasu536/river_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/motor.cpp.o
 .PHONY : src/motor.cpp.o
 
 src/motor.i: src/motor.cpp.i
@@ -303,7 +303,7 @@ src/motor.i: src/motor.cpp.i
 
 # target to preprocess a source file
 src/motor.cpp.i:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/motor.cpp.i
+	cd /home/vasu536/river_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/motor.cpp.i
 .PHONY : src/motor.cpp.i
 
 src/motor.s: src/motor.cpp.s
@@ -312,7 +312,7 @@ src/motor.s: src/motor.cpp.s
 
 # target to generate assembly for a file
 src/motor.cpp.s:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/motor.cpp.s
+	cd /home/vasu536/river_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/motor.cpp.s
 .PHONY : src/motor.cpp.s
 
 src/phidget.o: src/phidget.cpp.o
@@ -321,7 +321,7 @@ src/phidget.o: src/phidget.cpp.o
 
 # target to build an object file
 src/phidget.cpp.o:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/phidget.cpp.o
+	cd /home/vasu536/river_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/phidget.cpp.o
 .PHONY : src/phidget.cpp.o
 
 src/phidget.i: src/phidget.cpp.i
@@ -330,7 +330,7 @@ src/phidget.i: src/phidget.cpp.i
 
 # target to preprocess a source file
 src/phidget.cpp.i:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/phidget.cpp.i
+	cd /home/vasu536/river_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/phidget.cpp.i
 .PHONY : src/phidget.cpp.i
 
 src/phidget.s: src/phidget.cpp.s
@@ -339,7 +339,7 @@ src/phidget.s: src/phidget.cpp.s
 
 # target to generate assembly for a file
 src/phidget.cpp.s:
-	cd /home/vasu536/catkin_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/phidget.cpp.s
+	cd /home/vasu536/river_ws/build && $(MAKE) -f phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/build.make phidgets_drivers/phidgets_api/CMakeFiles/phidgets_api.dir/src/phidget.cpp.s
 .PHONY : src/phidget.cpp.s
 
 # Help Target
@@ -385,6 +385,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/vasu536/catkin_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/vasu536/river_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
