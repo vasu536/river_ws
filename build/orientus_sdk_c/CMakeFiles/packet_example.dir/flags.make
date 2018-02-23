@@ -6,5 +6,5 @@ C_FLAGS =
 
 C_DEFINES = -DROS_BUILD_SHARED_LIBS=1
 
-C_INCLUDES = -I/home/vasu536/river_ws/src/orientus_sdk_c/include/orientus_sdk_c -I/home/vasu536/river_ws/src/orientus_sdk_c/include/orientus_sdk_c/rs232 
+C_INCLUDES = -I/home/parallels/my_work/river_ws/src/orientus_sdk_c/include/orientus_sdk_c -I/home/parallels/my_work/river_ws/src/orientus_sdk_c/include/orientus_sdk_c/rs232 
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vasu536/river_ws/src
+CMAKE_SOURCE_DIR = /home/parallels/my_work/river_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vasu536/river_ws/build
+CMAKE_BINARY_DIR = /home/parallels/my_work/river_ws/build
 
 # Utility rule file for doxygen.
 
@@ -67,6 +67,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/vasu536/river_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasu536/river_ws/src /home/vasu536/river_ws/src /home/vasu536/river_ws/build /home/vasu536/river_ws/build /home/vasu536/river_ws/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/parallels/my_work/river_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/parallels/my_work/river_ws/src /home/parallels/my_work/river_ws/src /home/parallels/my_work/river_ws/build /home/parallels/my_work/river_ws/build /home/parallels/my_work/river_ws/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

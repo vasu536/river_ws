@@ -1,2 +1,2 @@
-gazebo_ros_demos/custom_plugin_tutorial:gazebo_ros_demos/rrbot_control:gazebo_ros_demos/rrbot_description:gazebo_ros_demos/rrbot_gazebo:orientus_driver:orientus_sdk_c:phidgets_drivers/libphidget21:phidgets_drivers/phidgets_api:phidgets_drivers/phidgets_drivers:phidgets_drivers/phidgets_high_speed_encoder:phidgets_drivers/phidgets_ik:phidgets_drivers/phidgets_imu:quadrant_locater:turtlebot/turtlebot:turtlebot/turtlebot_bringup:turtlebot/turtlebot_capabilities:turtlebot/turtlebot_description:turtlebot/turtlebot_teleop:urdf_tutorial/urdf_sim_tutorial:urdf_tutorial/urdf_tutorial
--DCATKIN_DEVEL_PREFIX=/home/vasu536/river_ws/devel -DCMAKE_INSTALL_PREFIX=/home/vasu536/river_ws/install -G Unix Makefiles
+orientus_driver:orientus_sdk_c:quadrant_locater
+-DCATKIN_DEVEL_PREFIX=/home/parallels/my_work/river_ws/devel -DCMAKE_INSTALL_PREFIX=/home/parallels/my_work/river_ws/install -G Unix Makefiles

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vasu536/river_ws/src
+CMAKE_SOURCE_DIR = /home/parallels/my_work/river_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vasu536/river_ws/build
+CMAKE_BINARY_DIR = /home/parallels/my_work/river_ws/build
 
 # Include any dependencies generated for this target.
 include orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/depend.make
@@ -58,17 +58,17 @@ include orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/progress.make
 include orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/flags.make
 
 orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.o: orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/flags.make
-orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.o: /home/vasu536/river_ws/src/orientus_sdk_c/src/an_packet_protocol.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vasu536/river_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.o"
-	cd /home/vasu536/river_ws/build/orientus_sdk_c && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.o   -c /home/vasu536/river_ws/src/orientus_sdk_c/src/an_packet_protocol.c
+orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.o: /home/parallels/my_work/river_ws/src/orientus_sdk_c/src/an_packet_protocol.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/parallels/my_work/river_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.o"
+	cd /home/parallels/my_work/river_ws/build/orientus_sdk_c && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.o   -c /home/parallels/my_work/river_ws/src/orientus_sdk_c/src/an_packet_protocol.c
 
 orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.i"
-	cd /home/vasu536/river_ws/build/orientus_sdk_c && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vasu536/river_ws/src/orientus_sdk_c/src/an_packet_protocol.c > CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.i
+	cd /home/parallels/my_work/river_ws/build/orientus_sdk_c && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/parallels/my_work/river_ws/src/orientus_sdk_c/src/an_packet_protocol.c > CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.i
 
 orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.s"
-	cd /home/vasu536/river_ws/build/orientus_sdk_c && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vasu536/river_ws/src/orientus_sdk_c/src/an_packet_protocol.c -o CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.s
+	cd /home/parallels/my_work/river_ws/build/orientus_sdk_c && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/parallels/my_work/river_ws/src/orientus_sdk_c/src/an_packet_protocol.c -o CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.s
 
 orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.o.requires:
 
@@ -82,17 +82,17 @@ orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.o.provides
 
 
 orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.o: orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/flags.make
-orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.o: /home/vasu536/river_ws/src/orientus_sdk_c/src/orientus_packets.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vasu536/river_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.o"
-	cd /home/vasu536/river_ws/build/orientus_sdk_c && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.o   -c /home/vasu536/river_ws/src/orientus_sdk_c/src/orientus_packets.c
+orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.o: /home/parallels/my_work/river_ws/src/orientus_sdk_c/src/orientus_packets.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/parallels/my_work/river_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.o"
+	cd /home/parallels/my_work/river_ws/build/orientus_sdk_c && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.o   -c /home/parallels/my_work/river_ws/src/orientus_sdk_c/src/orientus_packets.c
 
 orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.i"
-	cd /home/vasu536/river_ws/build/orientus_sdk_c && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vasu536/river_ws/src/orientus_sdk_c/src/orientus_packets.c > CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.i
+	cd /home/parallels/my_work/river_ws/build/orientus_sdk_c && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/parallels/my_work/river_ws/src/orientus_sdk_c/src/orientus_packets.c > CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.i
 
 orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.s"
-	cd /home/vasu536/river_ws/build/orientus_sdk_c && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vasu536/river_ws/src/orientus_sdk_c/src/orientus_packets.c -o CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.s
+	cd /home/parallels/my_work/river_ws/build/orientus_sdk_c && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/parallels/my_work/river_ws/src/orientus_sdk_c/src/orientus_packets.c -o CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.s
 
 orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.o.requires:
 
@@ -113,15 +113,15 @@ orientus_sdk_c_OBJECTS = \
 # External object files for target orientus_sdk_c
 orientus_sdk_c_EXTERNAL_OBJECTS =
 
-/home/vasu536/river_ws/devel/lib/liborientus_sdk_c.so: orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.o
-/home/vasu536/river_ws/devel/lib/liborientus_sdk_c.so: orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.o
-/home/vasu536/river_ws/devel/lib/liborientus_sdk_c.so: orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/build.make
-/home/vasu536/river_ws/devel/lib/liborientus_sdk_c.so: orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vasu536/river_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library /home/vasu536/river_ws/devel/lib/liborientus_sdk_c.so"
-	cd /home/vasu536/river_ws/build/orientus_sdk_c && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/orientus_sdk_c.dir/link.txt --verbose=$(VERBOSE)
+/home/parallels/my_work/river_ws/devel/lib/liborientus_sdk_c.so: orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/an_packet_protocol.c.o
+/home/parallels/my_work/river_ws/devel/lib/liborientus_sdk_c.so: orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/src/orientus_packets.c.o
+/home/parallels/my_work/river_ws/devel/lib/liborientus_sdk_c.so: orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/build.make
+/home/parallels/my_work/river_ws/devel/lib/liborientus_sdk_c.so: orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/parallels/my_work/river_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library /home/parallels/my_work/river_ws/devel/lib/liborientus_sdk_c.so"
+	cd /home/parallels/my_work/river_ws/build/orientus_sdk_c && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/orientus_sdk_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/build: /home/vasu536/river_ws/devel/lib/liborientus_sdk_c.so
+orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/build: /home/parallels/my_work/river_ws/devel/lib/liborientus_sdk_c.so
 
 .PHONY : orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/build
 
@@ -131,10 +131,10 @@ orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/requires: orientus_sdk_c/CMakeFiles
 .PHONY : orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/requires
 
 orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/clean:
-	cd /home/vasu536/river_ws/build/orientus_sdk_c && $(CMAKE_COMMAND) -P CMakeFiles/orientus_sdk_c.dir/cmake_clean.cmake
+	cd /home/parallels/my_work/river_ws/build/orientus_sdk_c && $(CMAKE_COMMAND) -P CMakeFiles/orientus_sdk_c.dir/cmake_clean.cmake
 .PHONY : orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/clean
 
 orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/depend:
-	cd /home/vasu536/river_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasu536/river_ws/src /home/vasu536/river_ws/src/orientus_sdk_c /home/vasu536/river_ws/build /home/vasu536/river_ws/build/orientus_sdk_c /home/vasu536/river_ws/build/orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/parallels/my_work/river_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/parallels/my_work/river_ws/src /home/parallels/my_work/river_ws/src/orientus_sdk_c /home/parallels/my_work/river_ws/build /home/parallels/my_work/river_ws/build/orientus_sdk_c /home/parallels/my_work/river_ws/build/orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : orientus_sdk_c/CMakeFiles/orientus_sdk_c.dir/depend
 

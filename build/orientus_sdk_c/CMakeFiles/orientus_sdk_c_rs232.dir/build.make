@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vasu536/river_ws/src
+CMAKE_SOURCE_DIR = /home/parallels/my_work/river_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vasu536/river_ws/build
+CMAKE_BINARY_DIR = /home/parallels/my_work/river_ws/build
 
 # Include any dependencies generated for this target.
 include orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/depend.make
@@ -58,17 +58,17 @@ include orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/progress.make
 include orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/flags.make
 
 orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.o: orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/flags.make
-orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.o: /home/vasu536/river_ws/src/orientus_sdk_c/src/rs232/rs232.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vasu536/river_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.o"
-	cd /home/vasu536/river_ws/build/orientus_sdk_c && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.o   -c /home/vasu536/river_ws/src/orientus_sdk_c/src/rs232/rs232.c
+orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.o: /home/parallels/my_work/river_ws/src/orientus_sdk_c/src/rs232/rs232.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/parallels/my_work/river_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.o"
+	cd /home/parallels/my_work/river_ws/build/orientus_sdk_c && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.o   -c /home/parallels/my_work/river_ws/src/orientus_sdk_c/src/rs232/rs232.c
 
 orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.i"
-	cd /home/vasu536/river_ws/build/orientus_sdk_c && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vasu536/river_ws/src/orientus_sdk_c/src/rs232/rs232.c > CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.i
+	cd /home/parallels/my_work/river_ws/build/orientus_sdk_c && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/parallels/my_work/river_ws/src/orientus_sdk_c/src/rs232/rs232.c > CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.i
 
 orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.s"
-	cd /home/vasu536/river_ws/build/orientus_sdk_c && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vasu536/river_ws/src/orientus_sdk_c/src/rs232/rs232.c -o CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.s
+	cd /home/parallels/my_work/river_ws/build/orientus_sdk_c && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/parallels/my_work/river_ws/src/orientus_sdk_c/src/rs232/rs232.c -o CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.s
 
 orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.o.requires:
 
@@ -88,14 +88,14 @@ orientus_sdk_c_rs232_OBJECTS = \
 # External object files for target orientus_sdk_c_rs232
 orientus_sdk_c_rs232_EXTERNAL_OBJECTS =
 
-/home/vasu536/river_ws/devel/lib/liborientus_sdk_c_rs232.so: orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.o
-/home/vasu536/river_ws/devel/lib/liborientus_sdk_c_rs232.so: orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/build.make
-/home/vasu536/river_ws/devel/lib/liborientus_sdk_c_rs232.so: orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vasu536/river_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library /home/vasu536/river_ws/devel/lib/liborientus_sdk_c_rs232.so"
-	cd /home/vasu536/river_ws/build/orientus_sdk_c && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/orientus_sdk_c_rs232.dir/link.txt --verbose=$(VERBOSE)
+/home/parallels/my_work/river_ws/devel/lib/liborientus_sdk_c_rs232.so: orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/src/rs232/rs232.c.o
+/home/parallels/my_work/river_ws/devel/lib/liborientus_sdk_c_rs232.so: orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/build.make
+/home/parallels/my_work/river_ws/devel/lib/liborientus_sdk_c_rs232.so: orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/parallels/my_work/river_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library /home/parallels/my_work/river_ws/devel/lib/liborientus_sdk_c_rs232.so"
+	cd /home/parallels/my_work/river_ws/build/orientus_sdk_c && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/orientus_sdk_c_rs232.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/build: /home/vasu536/river_ws/devel/lib/liborientus_sdk_c_rs232.so
+orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/build: /home/parallels/my_work/river_ws/devel/lib/liborientus_sdk_c_rs232.so
 
 .PHONY : orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/build
 
@@ -104,10 +104,10 @@ orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/requires: orientus_sdk_c/CMak
 .PHONY : orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/requires
 
 orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/clean:
-	cd /home/vasu536/river_ws/build/orientus_sdk_c && $(CMAKE_COMMAND) -P CMakeFiles/orientus_sdk_c_rs232.dir/cmake_clean.cmake
+	cd /home/parallels/my_work/river_ws/build/orientus_sdk_c && $(CMAKE_COMMAND) -P CMakeFiles/orientus_sdk_c_rs232.dir/cmake_clean.cmake
 .PHONY : orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/clean
 
 orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/depend:
-	cd /home/vasu536/river_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vasu536/river_ws/src /home/vasu536/river_ws/src/orientus_sdk_c /home/vasu536/river_ws/build /home/vasu536/river_ws/build/orientus_sdk_c /home/vasu536/river_ws/build/orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/parallels/my_work/river_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/parallels/my_work/river_ws/src /home/parallels/my_work/river_ws/src/orientus_sdk_c /home/parallels/my_work/river_ws/build /home/parallels/my_work/river_ws/build/orientus_sdk_c /home/parallels/my_work/river_ws/build/orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : orientus_sdk_c/CMakeFiles/orientus_sdk_c_rs232.dir/depend
 

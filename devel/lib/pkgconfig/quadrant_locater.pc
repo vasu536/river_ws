@@ -1,8 +1,8 @@
-prefix=/home/vasu536/river_ws/devel
+prefix=/home/parallels/my_work/river_ws/devel
 
 Name: quadrant_locater
 Description: Description of quadrant_locater
 Version: 0.0.1
 Cflags: 
-Libs: -L/home/vasu536/river_ws/devel/lib 
+Libs: -L/home/parallels/my_work/river_ws/devel/lib 
 Requires: roscpp geometry_msgs std_msgs sensor_msgs

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/vasu536/river_ws/src/orientus_sdk_c/include/orientus_sdk_c/rs232/rs232.h
+/home/parallels/my_work/river_ws/src/orientus_sdk_c/include/orientus_sdk_c/rs232/rs232.h
 stdio.h
 -
 string.h
@@ -28,7 +28,7 @@ limits.h
 windows.h
 -
 
-/home/vasu536/river_ws/src/orientus_sdk_c/src/rs232/rs232.c
+/home/parallels/my_work/river_ws/src/orientus_sdk_c/src/rs232/rs232.c
 rs232.h
-/home/vasu536/river_ws/src/orientus_sdk_c/src/rs232/rs232.h
+/home/parallels/my_work/river_ws/src/orientus_sdk_c/src/rs232/rs232.h
 

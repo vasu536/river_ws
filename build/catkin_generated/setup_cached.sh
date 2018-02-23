@@ -7,9 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/vasu536/river_ws/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/vasu536/river_ws/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/vasu536/river_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD="/home/vasu536/river_ws/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/vasu536/river_ws/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/vasu536/river_ws/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/parallels/my_work/river_ws/devel:$CMAKE_PREFIX_PATH"
+export PWD="/home/parallels/my_work/river_ws/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/parallels/my_work/river_ws/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/parallels/my_work/river_ws/src:$ROS_PACKAGE_PATH"

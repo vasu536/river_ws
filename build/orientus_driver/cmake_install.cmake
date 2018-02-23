@@ -1,8 +1,8 @@
-# Install script for directory: /home/vasu536/river_ws/src/orientus_driver
+# Install script for directory: /home/parallels/my_work/river_ws/src/orientus_driver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/vasu536/river_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/parallels/my_work/river_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,18 +33,18 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/vasu536/river_ws/build/orientus_driver/catkin_generated/installspace/orientus_driver.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/parallels/my_work/river_ws/build/orientus_driver/catkin_generated/installspace/orientus_driver.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/orientus_driver/cmake" TYPE FILE FILES
-    "/home/vasu536/river_ws/build/orientus_driver/catkin_generated/installspace/orientus_driverConfig.cmake"
-    "/home/vasu536/river_ws/build/orientus_driver/catkin_generated/installspace/orientus_driverConfig-version.cmake"
+    "/home/parallels/my_work/river_ws/build/orientus_driver/catkin_generated/installspace/orientus_driverConfig.cmake"
+    "/home/parallels/my_work/river_ws/build/orientus_driver/catkin_generated/installspace/orientus_driverConfig-version.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/orientus_driver" TYPE FILE FILES "/home/vasu536/river_ws/src/orientus_driver/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/orientus_driver" TYPE FILE FILES "/home/parallels/my_work/river_ws/src/orientus_driver/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -54,12 +54,12 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/orientus_driver/orientus_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/orientus_driver" TYPE EXECUTABLE FILES "/home/vasu536/river_ws/devel/lib/orientus_driver/orientus_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/orientus_driver" TYPE EXECUTABLE FILES "/home/parallels/my_work/river_ws/devel/lib/orientus_driver/orientus_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/orientus_driver/orientus_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/orientus_driver/orientus_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/orientus_driver/orientus_node"
-         OLD_RPATH "/home/vasu536/river_ws/devel/lib:/opt/ros/kinetic/lib:"
+         OLD_RPATH "/home/parallels/my_work/river_ws/devel/lib:/opt/ros/kinetic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/orientus_driver/orientus_node")
@@ -68,6 +68,6 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/orientus_driver" TYPE DIRECTORY FILES "/home/vasu536/river_ws/src/orientus_driver/include/" FILES_MATCHING REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/orientus_driver" TYPE DIRECTORY FILES "/home/parallels/my_work/river_ws/src/orientus_driver/include/" FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 
