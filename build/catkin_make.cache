@@ -1,2 +1,0 @@
-orientus_driver:orientus_sdk_c:quadrant_locater
--DCATKIN_DEVEL_PREFIX=/home/parallels/my_work/river_ws/devel -DCMAKE_INSTALL_PREFIX=/home/parallels/my_work/river_ws/install -G Unix Makefiles

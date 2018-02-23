@@ -1,1 +1,0 @@
-/usr/bin/cc     CMakeFiles/packet_example.dir/src/packet_example.c.o  -o /home/parallels/my_work/river_ws/devel/lib/orientus_sdk_c/packet_example -rdynamic /home/parallels/my_work/river_ws/devel/lib/liborientus_sdk_c.so /home/parallels/my_work/river_ws/devel/lib/liborientus_sdk_c_rs232.so -Wl,-rpath,/home/parallels/my_work/river_ws/devel/lib: 

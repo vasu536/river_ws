@@ -1,8 +1,0 @@
-prefix=/home/parallels/my_work/river_ws/install
-
-Name: orientus_sdk_c
-Description: Description of orientus_sdk_c
-Version: 0.0.4
-Cflags: -I/home/parallels/my_work/river_ws/install/include
-Libs: -L/home/parallels/my_work/river_ws/install/lib -lorientus_sdk_c -lorientus_sdk_c_rs232
-Requires: 

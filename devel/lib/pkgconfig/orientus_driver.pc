@@ -1,8 +1,0 @@
-prefix=/home/parallels/my_work/river_ws/devel
-
-Name: orientus_driver
-Description: Description of orientus_driver
-Version: 0.0.4
-Cflags: 
-Libs: -L/home/parallels/my_work/river_ws/devel/lib 
-Requires: geometry_msgs roscpp sensor_msgs orientus_sdk_c diagnostic_updater
