@@ -1,8 +1,0 @@
-prefix=/home/vasu536/river_ws/install
-
-Name: phidgets_high_speed_encoder
-Description: Description of phidgets_high_speed_encoder
-Version: 0.7.5
-Cflags: -I/home/vasu536/river_ws/install/include
-Libs: -L/home/vasu536/river_ws/install/lib 
-Requires: libphidget21 phidgets_api roscpp std_msgs message_runtime sensor_msgs

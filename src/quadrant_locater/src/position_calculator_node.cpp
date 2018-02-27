@@ -29,8 +29,8 @@ private:
     sensor_msgs::Imu latest_imu_msg;
     bool imu_msg_received;
 
-    static const double lin_acc_x_offset = 0.05;
-    static const double lin_acc_y_offset = 0.05;
+    static const double lin_acc_x_offset = -0.4524;
+    static const double lin_acc_y_offset = 0.0873;
 
     double lin_acc_x_data;
     double lin_acc_y_data;
@@ -104,23 +104,9 @@ public:
          * */
 
         /* Step 1 */
-        if (abs(linear_acceleration_data.x) <= lin_acc_x_offset)
-        {
-            lin_acc_x_data = 0;
-        }
-        else
-        {
-            lin_acc_x_data = linear_acceleration_data.x;
-        }
 
-        if (abs(linear_acceleration_data.y) <= lin_acc_y_offset)
-        {
-            lin_acc_y_data = 0;
-        }
-        else
-        {
-            lin_acc_y_data = linear_acceleration_data.y;
-        }
+        lin_acc_x_data = linear_acceleration_data.x - lin_acc_x_offset;
+        lin_acc_y_data = linear_acceleration_data.y - lin_acc_y_offset;
 
         //lin_acc_x_data = linear_acceleration_data.x;
 
@@ -136,27 +122,17 @@ public:
             lin_vel_x_previous = 0;
             lin_vel_y_previous = 0;
 
-            if (lin_acc_x_data != 0)
-            {
-                lin_pos_x_present = 0.5 * lin_acc_x_data * pow(delta_t, 2);
-                lin_vel_x_present = lin_acc_x_data * delta_t;
-            }
+            lin_pos_x_present = 0.5 * lin_acc_x_data * pow(delta_t, 2);
+            lin_vel_x_present = lin_acc_x_data * delta_t;
 
-            if (lin_acc_y_data != 0)
-            {
-                lin_pos_y_present = 0.5 * lin_acc_y_data * pow(delta_t, 2);
-                lin_vel_y_present = lin_acc_y_data * delta_t;
-            }
-
+            lin_pos_y_present = 0.5 * lin_acc_y_data * pow(delta_t, 2);
+            lin_vel_y_present = lin_acc_y_data * delta_t;
 
             theta_previous = 0;
             theta_dot_previous = 0;
 
-            if (lin_pos_x_present != 0)
-            {
-                theta_present = lin_pos_y_present/lin_pos_x_present;
-                theta_dot_present = theta_present/delta_t;
-            }
+            theta_present = lin_pos_y_present/lin_pos_x_present;
+            theta_dot_present = theta_present/delta_t;
 
             counter++;
         }
@@ -169,41 +145,20 @@ public:
             lin_vel_x_previous = lin_vel_x_present;
             lin_vel_y_previous = lin_vel_y_present;
 
-            if (lin_acc_x_data != 0 || lin_acc_y_data != 0)
-            {
-                if (lin_pos_x_present == 0)
-                {
-                    lin_pos_x_present = 0.5 * lin_acc_x_data * pow(delta_t, 2);
-                    lin_vel_x_present = lin_acc_x_data * delta_t;
-                }
+            lin_vel_x_present = lin_vel_x_previous + lin_acc_x_data * delta_t;
+            lin_vel_y_present = lin_vel_y_previous + lin_acc_y_data * delta_t;
 
-                if (lin_pos_y_present == 0)
-                {
-                    lin_pos_y_present = 0.5 * lin_acc_y_data * pow(delta_t, 2);
-                    lin_vel_x_present = lin_acc_x_data * delta_t;
-                }
+            lin_pos_x_present = lin_pos_x_previous + lin_vel_x_previous * delta_t;
+            lin_pos_y_present = lin_pos_y_previous + lin_vel_y_previous * delta_t;
 
-                lin_vel_x_present = lin_vel_x_previous + lin_acc_x_data * delta_t;
-                lin_vel_y_present = lin_vel_y_previous + lin_acc_y_data * delta_t;
+            theta_previous = theta_present;
+            theta_dot_previous = theta_dot_present;
 
-
-                lin_pos_x_present = lin_pos_x_previous + delta_t * ((lin_vel_x_previous + lin_vel_x_present)/2);
-
-                lin_pos_y_present = lin_pos_y_previous + delta_t * ((lin_vel_y_previous + lin_vel_y_present)/2);
-
-
-                theta_previous = theta_present;
-                theta_dot_previous = theta_dot_present;
-
-                theta_present = lin_pos_y_present/lin_pos_x_present;
-
-                theta_dot_present = (theta_present-theta_previous)/delta_t;
-
-            }
+            theta_present = lin_pos_y_present/lin_pos_x_present;
+            theta_dot_present = (theta_present-theta_previous)/delta_t;
 
             counter++;
         }
-
 
         publish_data();
         /* Publish the linear position, velocity, angle and angular velocity data for calibration */
@@ -269,12 +224,16 @@ int main(int argc, char *argv[]) {
     ros::NodeHandle nh;
     ros::NodeHandle pnh("~");
 
-    try {
+    try 
+    {
         PositionCalculatorNode node(nh, pnh);
 
         //node.setZero();
         node.spin();
-    } catch(std::exception& e){
+    }
+
+    catch(std::exception& e)
+    {
         ROS_FATAL_STREAM("Exception thrown: " << e.what());
     }
 
