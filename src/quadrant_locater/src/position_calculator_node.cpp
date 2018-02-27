@@ -173,8 +173,8 @@ public:
             lin_vel_x_next = lin_vel_x_present + lin_acc_x_data * delta_t;
             lin_vel_y_next = lin_vel_y_present + lin_acc_y_data * delta_t;
 
-            lin_pos_x_next = lin_pos_x_present + (lin_vel_x_present * delta_t + 0.5 * lin_acc_x_data * pow(delta_t, 2));
-            lin_pos_y_next = lin_pos_y_present + (lin_vel_y_present * delta_t + 0.5 * lin_acc_y_data * pow(delta_t, 2));
+            lin_pos_x_next = lin_pos_x_present + lin_vel_x_present * delta_t;
+            lin_pos_y_next = lin_pos_y_present + lin_vel_y_present * delta_t;
 
             theta_present = theta_next;
             theta_dot_present = theta_dot_next;
