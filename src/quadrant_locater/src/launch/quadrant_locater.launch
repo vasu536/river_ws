@@ -1,6 +1,6 @@
   <launch>
 
-      <node pkg="quadrant_locater" type="position_calculator_node" name="position_calculator_node_name">
+      <node pkg="quadrant_locater" type="position_calculator_node" name="position_calculator_node_name" output="screen">
       </node>
       
       <node pkg="orientus_driver" type="orientus_node" name="orientus_node_name" >

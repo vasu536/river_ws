@@ -9,6 +9,7 @@
 #include <exception>
 
 #include "ros/ros.h"
+#include <ros/console.h>
 
 #include "sensor_msgs/Imu.h"
 #include "geometry_msgs/Vector3.h"
@@ -62,7 +63,7 @@ private:
 
     int counter;
 
-    static const int no_of_samples = 200;
+    static const int no_of_samples = 400;
 
     /* Rate of imu publishing is 50Hz. So delta_t is 0.02sec */
     static const double delta_t = 0.02;
@@ -85,6 +86,9 @@ public:
 
         lin_acc_x_cumm = 0;
         lin_acc_y_cumm = 0;
+
+        lin_acc_x_offset = 0;
+        lin_acc_y_offset = 0;
 
         lin_pos_x_present = 0;
         lin_pos_y_present = 0;
@@ -129,6 +133,9 @@ public:
         lin_acc_x_data = linear_acceleration_data.x - lin_acc_x_offset;
         lin_acc_y_data = linear_acceleration_data.y - lin_acc_y_offset;
 
+        //ROS_INFO("Linear accelerations are %f, %f", lin_acc_x_data, lin_acc_y_data);
+        //ROS_INFO("Linear offset is %f, %f", lin_acc_x_offset, lin_acc_y_offset);
+
         //lin_acc_x_data = linear_acceleration_data.x;
 
         //std::cout<<"Linear accelerations after removing offset are "<< lin_acc_x_data<< ", "<< lin_acc_y_data<< std::endl;
@@ -141,14 +148,16 @@ public:
 
             counter++;
 
-            if (counter == no_of_samples)
+            if (counter == no_of_samples - 1)
             {
-                lin_acc_x_offset = lin_acc_x_cumm / counter;
-                lin_acc_y_offset = lin_acc_y_cumm / counter;
+                lin_acc_x_offset = lin_acc_x_cumm / no_of_samples;
+                lin_acc_y_offset = lin_acc_y_cumm / no_of_samples;
+
+              //  ROS_INFO("Linear offset is -> x = %f, y = %f", lin_acc_x_offset, lin_acc_y_offset);
             }
         }
 
-        if (counter == no_of_samples)
+        else if (counter == no_of_samples)
         {
             lin_pos_x_next = 0.5 * lin_acc_x_data * pow(delta_t, 2);
             lin_vel_x_next = lin_acc_x_data * delta_t;

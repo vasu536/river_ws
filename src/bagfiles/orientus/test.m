@@ -2,12 +2,12 @@ clc;
 close all;
 clear;
  
-str1 = '/home/vasu536/river_ws/src/bagfiles/orientus/02-26-2018/position_3/tb_s_';
+str1 = '/home/vasu536/river_ws/src/bagfiles/orientus/02-27-2018/tb_s_';
 str3 = '.bag';
 
 g = 9.80665;
 
-n = 6; %number of files in folder in order
+n = 1; %number of files in folder in order
 
 for i = 1:n
     
@@ -15,13 +15,13 @@ for i = 1:n
     
     [x_lin_acc, y_lin_acc] = data_analysis(file);
     
-%     figure;
-%     plot(x_lin_acc);
-%     title('linear acceleration in X direction');
-% 
-%     figure;
-%     plot(y_lin_acc);
-%     title('linear acceleration in Y direction');
+    figure;
+    plot(x_lin_acc);
+    title('linear acceleration in X direction');
+
+    figure;
+    plot(y_lin_acc);
+    title('linear acceleration in Y direction');
 
     x_mean = mean(x_lin_acc);
     y_mean = mean(y_lin_acc);
