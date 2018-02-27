@@ -62,7 +62,7 @@ private:
 
     int counter;
 
-    static const int no_of_samples = 25;
+    static const int no_of_samples = 200;
 
     /* Rate of imu publishing is 50Hz. So delta_t is 0.02sec */
     static const double delta_t = 0.02;
