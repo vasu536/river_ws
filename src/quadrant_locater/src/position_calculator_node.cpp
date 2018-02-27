@@ -135,6 +135,7 @@ public:
 
         //ROS_INFO("Linear accelerations are %f, %f", lin_acc_x_data, lin_acc_y_data);
         //ROS_INFO("Linear offset is %f, %f", lin_acc_x_offset, lin_acc_y_offset);
+        //ROS_INFO("Linear position is %f, %f", lin_pos_x_present, lin_pos_y_present);
 
         //lin_acc_x_data = linear_acceleration_data.x;
 
@@ -171,7 +172,7 @@ public:
             counter++;
         }
 
-        else
+        else if (counter > no_of_samples)
         {
             lin_pos_x_present = lin_pos_x_next;
             lin_pos_y_present = lin_pos_y_next;
