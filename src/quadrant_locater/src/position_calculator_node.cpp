@@ -29,8 +29,15 @@ private:
     sensor_msgs::Imu latest_imu_msg;
     bool imu_msg_received;
 
-    static const double lin_acc_x_offset = -0.4524;
-    static const double lin_acc_y_offset = 0.0873;
+    /* Statically allocating the offset values which is not a good practice */
+    //static const double lin_acc_x_offset = -0.4524;
+    //static const double lin_acc_y_offset = 0.0873;
+
+    double lin_acc_x_offset;
+    double lin_acc_y_offset;
+
+    double lin_acc_x_cumm;
+    double lin_acc_y_cumm;
 
     double lin_acc_x_data;
     double lin_acc_y_data;
@@ -38,25 +45,27 @@ private:
     double lin_pos_x_present;
     double lin_pos_y_present;
 
-    double lin_pos_x_previous;
-    double lin_pos_y_previous;
+    double lin_pos_x_next;
+    double lin_pos_y_next;
 
     double lin_vel_x_present;
     double lin_vel_y_present;
 
-    double lin_vel_x_previous;
-    double lin_vel_y_previous;
+    double lin_vel_x_next;
+    double lin_vel_y_next;
 
     float theta_present;
-    float theta_previous;
+    float theta_next;
 
     float theta_dot_present;
-    float theta_dot_previous;
+    float theta_dot_next;
 
     int counter;
 
-    static const double delta_t = 0.004;
+    static const int no_of_samples = 25;
 
+    /* Rate of imu publishing is 50Hz. So delta_t is 0.02sec */
+    static const double delta_t = 0.02;
 
 public:
 
@@ -74,6 +83,9 @@ public:
 
         counter = 0;
 
+        lin_acc_x_cumm = 0;
+        lin_acc_y_cumm = 0;
+
         lin_pos_x_present = 0;
         lin_pos_y_present = 0;
 
@@ -82,6 +94,15 @@ public:
 
         theta_present = 0;
         theta_dot_present = 0;
+
+        lin_pos_x_next = 0;
+        lin_pos_y_next = 0;
+
+        lin_vel_x_next = 0;
+        lin_vel_y_next = 0;
+
+        theta_next = 0;
+        theta_dot_next = 0;
     }
 
     void imu_callback(const sensor_msgs::ImuConstPtr& imu_data)
@@ -112,50 +133,54 @@ public:
 
         //std::cout<<"Linear accelerations after removing offset are "<< lin_acc_x_data<< ", "<< lin_acc_y_data<< std::endl;
 
-
         /* Step 2 and 3 */
-        if (counter == 0)
+        if (counter < no_of_samples)
         {
-            lin_pos_x_previous = 0;
-            lin_pos_y_previous = 0;
+            lin_acc_x_cumm = lin_acc_x_cumm + lin_acc_x_data;
+            lin_acc_y_cumm = lin_acc_y_cumm + lin_acc_y_data;
 
-            lin_vel_x_previous = 0;
-            lin_vel_y_previous = 0;
+            counter++;
 
-            lin_pos_x_present = 0.5 * lin_acc_x_data * pow(delta_t, 2);
-            lin_vel_x_present = lin_acc_x_data * delta_t;
+            if (counter == no_of_samples)
+            {
+                lin_acc_x_offset = lin_acc_x_cumm / counter;
+                lin_acc_y_offset = lin_acc_y_cumm / counter;
+            }
+        }
 
-            lin_pos_y_present = 0.5 * lin_acc_y_data * pow(delta_t, 2);
-            lin_vel_y_present = lin_acc_y_data * delta_t;
+        if (counter == no_of_samples)
+        {
+            lin_pos_x_next = 0.5 * lin_acc_x_data * pow(delta_t, 2);
+            lin_vel_x_next = lin_acc_x_data * delta_t;
 
-            theta_previous = 0;
-            theta_dot_previous = 0;
+            lin_pos_y_next = 0.5 * lin_acc_y_data * pow(delta_t, 2);
+            lin_vel_y_next = lin_acc_y_data * delta_t;
 
-            theta_present = lin_pos_y_present/lin_pos_x_present;
-            theta_dot_present = theta_present/delta_t;
+            theta_next = lin_pos_y_next / lin_pos_x_next;
+            theta_dot_next = theta_next / delta_t;
 
             counter++;
         }
 
         else
         {
-            lin_pos_x_previous = lin_pos_x_present;
-            lin_pos_y_previous = lin_pos_y_present;
+            lin_pos_x_present = lin_pos_x_next;
+            lin_pos_y_present = lin_pos_y_next;
 
-            lin_vel_x_previous = lin_vel_x_present;
-            lin_vel_y_previous = lin_vel_y_present;
+            lin_vel_x_present = lin_vel_x_next;
+            lin_vel_y_present = lin_vel_y_next;
 
-            lin_vel_x_present = lin_vel_x_previous + lin_acc_x_data * delta_t;
-            lin_vel_y_present = lin_vel_y_previous + lin_acc_y_data * delta_t;
+            lin_vel_x_next = lin_vel_x_present + lin_acc_x_data * delta_t;
+            lin_vel_y_next = lin_vel_y_present + lin_acc_y_data * delta_t;
 
-            lin_pos_x_present = lin_pos_x_previous + lin_vel_x_previous * delta_t;
-            lin_pos_y_present = lin_pos_y_previous + lin_vel_y_previous * delta_t;
+            lin_pos_x_next = lin_pos_x_present + (lin_vel_x_present * delta_t + 0.5 * lin_acc_x_data * pow(delta_t, 2));
+            lin_pos_y_next = lin_pos_y_present + (lin_vel_y_present * delta_t + 0.5 * lin_acc_y_data * pow(delta_t, 2));
 
-            theta_previous = theta_present;
-            theta_dot_previous = theta_dot_present;
+            theta_present = theta_next;
+            theta_dot_present = theta_dot_next;
 
-            theta_present = lin_pos_y_present/lin_pos_x_present;
-            theta_dot_present = (theta_present-theta_previous)/delta_t;
+            theta_next = lin_pos_y_next/lin_pos_x_next;
+            theta_dot_next = (theta_next-theta_present)/delta_t;
 
             counter++;
         }
@@ -177,13 +202,11 @@ public:
         linear_position_data.y = lin_pos_y_present;
         linear_position_data.z = 0;
 
-
         linear_velocity_data.x = lin_vel_x_present;
         linear_velocity_data.y = lin_vel_y_present;
         linear_velocity_data.z = 0;
 
         angular_position_data.data = theta_present;
-
         angular_velocity_data.data = theta_dot_present;
 
         linear_position_data_pub.publish(linear_position_data);
@@ -191,7 +214,6 @@ public:
 
         angular_position_data_pub.publish(angular_position_data);
         angular_velocity_data_pub.publish(angular_velocity_data);
-
     }
 
     void spin()
@@ -224,7 +246,7 @@ int main(int argc, char *argv[]) {
     ros::NodeHandle nh;
     ros::NodeHandle pnh("~");
 
-    try 
+    try
     {
         PositionCalculatorNode node(nh, pnh);
 
