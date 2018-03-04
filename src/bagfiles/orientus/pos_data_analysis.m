@@ -1,6 +1,6 @@
 function [x_lin_pos, y_lin_pos, x_lin_vel, y_lin_vel, ... 
           x_lin_acc, y_lin_acc, z_lin_acc, ...
-          gyro_x, gyro_y, gyro_z, mag_x, mag_y, mag_z, time_data] = pos_data_analysis(filename)
+          gyro_x, gyro_y, gyro_z, mag_x, mag_y, mag_z] = pos_data_analysis(filename)
 
 bag_data = rosbag(filename);
 
@@ -47,11 +47,5 @@ for i = 1:length(mag_data)
     mag_x(i) = mag_data{i}.MagneticField_.X;
     mag_y(i) = mag_data{i}.MagneticField_.Y;
     mag_z(i) = mag_data{i}.MagneticField_.Z;
-    
-end
-
-for i = 1:length(timestamp)
-    
-    time_data(i) = timestamp{i}.Stamp;
     
 end

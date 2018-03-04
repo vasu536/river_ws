@@ -83,7 +83,7 @@ public:
         linear_velocity_data_pub = nh.advertise<geometry_msgs::Vector3>("bot/lin_velocity", 10);
         angular_position_data_pub = nh.advertise<std_msgs::Float32>("bot/angular_position", 10);
         angular_velocity_data_pub = nh.advertise<std_msgs::Float32>("bot/angular_velocity", 10);
-        timestamp_pub = nh.advertise<std_msgs::Float32>("bot/timestamp", 10);
+        //timestamp_pub = nh.advertise<std_msgs::Float32>("bot/timestamp", 10);
 
         counter = 0;
 
@@ -119,7 +119,7 @@ public:
         linear_acceleration_data = latest_imu_msg.linear_acceleration;
         time_data = latest_imu_msg.header;
 
-        ROS_INFO("time is -> %f", time_data.seq);
+        //ROS_INFO("time is -> %f", time_data.seq);
 
         //std::cout << "linear_acceleration data is " << linear_acceleration_data.x << ", " << linear_acceleration_data.y << ", "
         //          << linear_acceleration_data.z << std::endl;
@@ -227,7 +227,7 @@ public:
         angular_position_data.data = theta_present;
         angular_velocity_data.data = theta_dot_present;
 
-        timestamp.data = ros::Time::now().toSec();
+        //timestamp.data = ros::Time::now().toSec();
 
         //ROS_INFO("Time stamp is %f", timestamp.data);
         //ROS_INFO("Time stamp ROS is %f", );
@@ -238,7 +238,7 @@ public:
         angular_position_data_pub.publish(angular_position_data);
         angular_velocity_data_pub.publish(angular_velocity_data);
 
-        timestamp_pub.publish(timestamp);
+        //timestamp_pub.publish(timestamp);
     }
 
     void spin()
