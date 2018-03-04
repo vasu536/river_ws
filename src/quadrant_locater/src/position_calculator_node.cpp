@@ -83,6 +83,7 @@ public:
         linear_velocity_data_pub = nh.advertise<geometry_msgs::Vector3>("bot/lin_velocity", 10);
         angular_position_data_pub = nh.advertise<std_msgs::Float32>("bot/angular_position", 10);
         angular_velocity_data_pub = nh.advertise<std_msgs::Float32>("bot/angular_velocity", 10);
+        linear_acceleration_wobias_pub = nh.advertise<geometry_msgs::Vector3>("bot/linear_acceleration_wobias", 10);
         //timestamp_pub = nh.advertise<std_msgs::Float32>("bot/timestamp", 10);
 
         counter = 0;
@@ -157,8 +158,8 @@ public:
 
             if (counter == no_of_samples - 1)
             {
-                lin_acc_x_offset = lin_acc_x_cumm / no_of_samples;
-                lin_acc_y_offset = lin_acc_y_cumm / no_of_samples;
+                lin_acc_x_offset = (lin_acc_x_cumm + lin_acc_x_data) / no_of_samples;
+                lin_acc_y_offset = (lin_acc_y_cumm + lin_acc_y_data) / no_of_samples;
 
               //  ROS_INFO("Linear offset is -> x = %f, y = %f", lin_acc_x_offset, lin_acc_y_offset);
             }
@@ -189,8 +190,8 @@ public:
             lin_vel_x_next = lin_vel_x_present + lin_acc_x_data * delta_t;
             lin_vel_y_next = lin_vel_y_present + lin_acc_y_data * delta_t;
 
-            lin_pos_x_next = lin_pos_x_present + lin_vel_x_present * delta_t;
-            lin_pos_y_next = lin_pos_y_present + lin_vel_y_present * delta_t;
+            lin_pos_x_next = lin_pos_x_present + lin_vel_x_present * delta_t + 0.5 * lin_acc_x_data * pow(delta_t, 2);
+            lin_pos_y_next = lin_pos_y_present + lin_vel_y_present * delta_t + 0.5 * lin_acc_y_data * pow(delta_t, 2);
 
             theta_present = theta_next;
             theta_dot_present = theta_dot_next;
@@ -210,6 +211,7 @@ public:
     {
         geometry_msgs::Vector3 linear_position_data;
         geometry_msgs::Vector3 linear_velocity_data;
+        geometry_msgs::Vector3 linear_acceleration_wobias;
 
         std_msgs::Float32 angular_position_data;
         std_msgs::Float32 angular_velocity_data;
@@ -223,6 +225,10 @@ public:
         linear_velocity_data.x = lin_vel_x_present;
         linear_velocity_data.y = lin_vel_y_present;
         linear_velocity_data.z = 0;
+
+        linear_acceleration_wobias.x = lin_acc_x_data;
+        linear_acceleration_wobias.y = lin_acc_y_data;
+        linear_acceleration_wobias.z = 9.81;
 
         angular_position_data.data = theta_present;
         angular_velocity_data.data = theta_dot_present;
@@ -263,6 +269,7 @@ protected:
     ros::Publisher linear_velocity_data_pub;
     ros::Publisher angular_position_data_pub;
     ros::Publisher angular_velocity_data_pub;
+    ros::Publisher linear_acceleration_wobias_pub;
     ros::Publisher timestamp_pub;
 
 };
