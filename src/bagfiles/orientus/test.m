@@ -7,7 +7,7 @@ str3 = '.bag';
 
 g = 9.80665;
 
-n = 1; %number of files in folder in order
+n = 3; %number of files in folder in order
 
 for i = 1:n
     
