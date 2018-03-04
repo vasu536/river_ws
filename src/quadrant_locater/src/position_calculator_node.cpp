@@ -240,6 +240,7 @@ public:
 
         linear_position_data_pub.publish(linear_position_data);
         linear_velocity_data_pub.publish(linear_velocity_data);
+        linear_acceleration_wobias_pub.publish(linear_acceleration_wobias);
 
         angular_position_data_pub.publish(angular_position_data);
         angular_velocity_data_pub.publish(angular_velocity_data);
