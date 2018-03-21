@@ -1,15 +1,18 @@
 function [x_lin_pos, y_lin_pos, x_lin_vel, y_lin_vel, ... 
           x_lin_acc, y_lin_acc, z_lin_acc, ...
+          x_lin_acc_wobias, y_lin_acc_wobias, ...
           gyro_x, gyro_y, gyro_z, mag_x, mag_y, mag_z] = pos_data_analysis(filename)
 
 bag_data = rosbag(filename);
 
+lin_acc_data_wobias = select(bag_data, 'Topic', '/bot/linear_acceleration_wobias');
 lin_pos_data = select(bag_data, 'Topic', '/bot/lin_position');
 lin_vel_data = select(bag_data, 'Topic', '/bot/lin_velocity');
-imu_data = select(bag_data, 'Topic', '/imu/data');
-mag_data = select(bag_data, 'Topic', '/imu/mag');
+imu_data = select(bag_data, 'Topic', '/imu/imu');
+mag_data = select(bag_data, 'Topic', '/imu/magnetic_field');
 timestamp = select(bag_data, 'Topic', '/bot/timestamp');
 
+lin_acc_data_wobias = readMessages(lin_acc_data_wobias);
 lin_pos_data = readMessages(lin_pos_data);
 lin_vel_data = readMessages(lin_vel_data);
 imu_data = readMessages(imu_data);
@@ -49,3 +52,12 @@ for i = 1:length(mag_data)
     mag_z(i) = mag_data{i}.MagneticField_.Z;
     
 end
+
+for i = 1:length(lin_acc_data_wobias)
+    
+    x_lin_acc_wobias(i) = lin_acc_data_wobias{i}.X;
+    y_lin_acc_wobias(i) = lin_acc_data_wobias{i}.Y;
+    
+end
+    
+    
