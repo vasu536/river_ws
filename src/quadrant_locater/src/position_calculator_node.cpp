@@ -106,7 +106,7 @@ public:
     : nh_(nh), pnh_(pnh), loop_rate_(50)
     {
         imu_msg_received = true;
-        imu_sub = nh.subscribe("imu/imu", 100, &PositionCalculatorNode::imu_callback, this);
+        imu_sub = nh.subscribe("imu/data", 100, &PositionCalculatorNode::imu_callback, this);
 
         // Setting up ROS topics to publish after calculations
         linear_position_data_pub = nh.advertise<geometry_msgs::Vector3>("bot/lin_position", 10);

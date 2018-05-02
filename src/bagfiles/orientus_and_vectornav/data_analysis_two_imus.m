@@ -2,12 +2,12 @@ clc;
 close all;
 clear;
  
-str1 = '/home/vasu536/river_ws/src/bagfiles/orientus_and_vectornav/03-14-2018/cart_m_';
+str1 = '/home/vasu536/river_ws/src/bagfiles/orientus_and_vectornav/03-26-2018/cart_m_';
 str3 = '.bag';
 
 g = 9.80665;
 
-i = 8;
+i = 1;
 
 
 file = strcat(str1, int2str(i), str3);
