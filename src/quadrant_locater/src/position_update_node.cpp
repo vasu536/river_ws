@@ -173,25 +173,20 @@ public:
         gyro_z_present = 0; gyro_z_previous = 0;
 
         lin_acc_x_data = 0; lin_acc_y_data = 0; lin_acc_z_data = 0;
-
         lin_acc_x_cumm = 0; lin_acc_y_cumm = 0; lin_acc_z_cumm = 0;
-
         lin_acc_x_net = 0; lin_acc_y_net = 0; lin_acc_z_net = 0;
-
         lin_acc_x_offset = 0; lin_acc_y_offset = 0; lin_acc_z_offset = 0;
 
         lin_pos_x_present = 0; lin_pos_y_present = 0; lin_pos_z_present = 0;
-
-        lin_vel_x_present = 0; lin_vel_y_present = 0; lin_vel_z_present = 0;
-
-        theta_present = 0;
-        theta_dot_present = 0;
-
         lin_pos_x_next = 0; lin_pos_y_next = 0; lin_pos_z_next = 0;
 
+        lin_vel_x_present = 0; lin_vel_y_present = 0; lin_vel_z_present = 0;
         lin_vel_x_next = 0; lin_vel_y_next = 0; lin_vel_z_next = 0;
 
+        theta_present = 0;
         theta_next = 0;
+
+        theta_dot_present = 0;
         theta_dot_next = 0;
     }
 
@@ -250,10 +245,11 @@ public:
            Yaw rate obtained from the gyro data is used to caluclate the yaw from
            gyro by taking the initial value as the yaw from magnetometer after removing bias.  */
 
-
         /* roll pitch and yaw from accelerometer data */
         updateRPYAccel();
 
+        /* no_of_samples is the total number of samples collected at the beginning
+           with intital pose of IMU while stationary */
         if (counter < no_of_samples)
         {
             cummulativeCalc();
@@ -594,8 +590,9 @@ public:
     void estimatePosition()
     {
         float accel_net = pow((pow(lin_acc_x_data, 2) + pow(lin_acc_y_data, 2) + pow(lin_acc_z_data, 2)), 0.5);
-        if ((accel_net < g_data + g_thresh) && (accel_net > g_data - g_thresh))
+        if ((accel_net > g_data + g_thresh) || (accel_net < g_data - g_thresh))
         {
+            /* TODO: Change the calculation of Net acceleration with newly derived equations */
             lin_acc_x_net = lin_acc_x_data * cos(rpy_accel_data.y * M_PI/180) + lin_acc_x_data * cos(yaw_gyro * M_PI/180) \
                                                                        - lin_acc_y_data * sin(yaw_gyro * M_PI/180);
 
