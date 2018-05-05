@@ -25,12 +25,12 @@
 #include "tf/LinearMath/Matrix3x3.h"
 
 const static float g = 9.81;
-const static float S_bias = 0.0155;
+const static float S_bias = 0.16;
 const static float S_scaling = 0.0009;
-const static float S_arw = 0.0575;
+const static float S_arw = 0.013689;
 const static float R_covariance = 0.03;
-
-const static float alpha_compl_yaw;
+const static float g_thresh = 0.01;
+const static float alpha_compl_yaw = 0.93;
 
 
 class PositionCalculatorNode
@@ -461,7 +461,7 @@ public:
       {
           for (int j = 0; j < 3; j++)
           {
-              temp_matrix[i][j] = phi_k[i][0]*P_matrix_gyro[0][j] + phi_k[i+1][1]*P_matrix_gyro[1][j] + phi_k[i][2]*P_matrix_gyro[2][j];
+              temp_matrix[i][j] = phi_k[i][0]*P_matrix_gyro[0][j] + phi_k[i][1]*P_matrix_gyro[1][j] + phi_k[i][2]*P_matrix_gyro[2][j];
           }
       }
 
@@ -593,6 +593,19 @@ public:
         if ((accel_net > g_data + g_thresh) || (accel_net < g_data - g_thresh))
         {
             /* TODO: Change the calculation of Net acceleration with newly derived equations */
+            float a_xr = lin_acc_x_data;
+            float a_yr = lin_acc_y_data * cos(rpy_accel_data_norm.x * M_PI/180) + lin_acc_z_data * sin(rpy_accel_data_norm.x * M_PI/180);
+            float a_zr = lin_acc_z_data * cos(rpy_accel_data_norm.x * M_PI/180) - lin_acc_y_data * sin(rpy_accel_data_norm.x * M_PI/180);
+
+            float a_xrp = a_xr * cos(rpy_accel_data_norm.y * M_PI/180) + a_zr * sin(rpy_accel_data_norm.y * M_PI/180);
+            float a_yrp = a_yr;
+            float a_zrp = a_zr * cos(rpy_accel_data_norm.y * M_PI/180) - a_xr * sin(rpy_accel_data_norm.y * M_PI/180);
+
+            lin_acc_x_net = a_xrp * cos(yaw_gyro * M_PI/180) + a_yrp * sin(yaw_gyro * M_PI/180);
+            lin_acc_y_net = a_yrp * cos(yaw_gyro * M_PI/180) - a_xrp * sin(yaw_gyro * M_PI/180);
+            lin_acc_z_net = a_zrp;
+
+            /*
             lin_acc_x_net = lin_acc_x_data * cos(rpy_accel_data.y * M_PI/180) + lin_acc_x_data * cos(yaw_gyro * M_PI/180) \
                                                                        - lin_acc_y_data * sin(yaw_gyro * M_PI/180);
 
@@ -601,6 +614,7 @@ public:
 
             lin_acc_z_net = lin_acc_x_data * sin(rpy_accel_data.y * M_PI/180) + lin_acc_y_data * sin(rpy_accel_data.x * M_PI/180) \
                                                                        + lin_acc_z_data;
+            */
 
             lin_pos_x_present = lin_pos_x_next;
             lin_pos_y_present = lin_pos_y_next;
