@@ -13,6 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   std_msgs
   nav_msgs
+  tf
 )
 
 ## System dependencies are found with CMake's conventions
@@ -107,7 +108,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES quadrant_locater
-  CATKIN_DEPENDS roscpp geometry_msgs std_msgs sensor_msgs
+  CATKIN_DEPENDS roscpp geometry_msgs std_msgs sensor_msgs nav_msgs
 #  DEPENDS system_lib
 )
 
@@ -118,7 +119,7 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
-# include
+  include
   ${catkin_INCLUDE_DIRS}
 )
 

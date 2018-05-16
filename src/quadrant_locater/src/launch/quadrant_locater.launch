@@ -2,9 +2,10 @@
 
       <node pkg="quadrant_locater" type="position_calculator_node" name="position_calculator_node_name" output="screen">
       </node>
-      
+
       <node pkg="orientus_driver" type="orientus_node" name="orientus_node_name" >
       </node>
-      
-  </launch>
 
+      <node pkg="rviz" type="rviz" name="rviz" args="-d $(find quadrant_locater)/rviz/simple.rviz" />
+
+  </launch>

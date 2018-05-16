@@ -188,6 +188,16 @@ public:
 
         theta_dot_present = 0;
         theta_dot_next = 0;
+
+        H_matrix_gyro[0][0] = 1; H_matrix_gyro[0][1] = 0; H_matrix_gyro[0][2] = 0;
+
+        P_matrix_gyro[0][0] = 1; P_matrix_gyro[0][1] = 0; P_matrix_gyro[0][2] = 0;
+        P_matrix_gyro[1][0] = 0; P_matrix_gyro[1][1] = 1; P_matrix_gyro[1][2] = 0;
+        P_matrix_gyro[2][0] = 0; P_matrix_gyro[2][1] = 0; P_matrix_gyro[2][2] = 1;
+
+        delta_x_cap_gyro[0][0] = 0; delta_x_cap_gyro[1][0] = 0; delta_x_cap_gyro[2][0] = 0;
+        x_cap_gyro[0][0] = 0; x_cap_gyro[1][0] = 0; x_cap_gyro[2][0] = 0;
+
     }
 
     PositionCalculatorNode(ros::NodeHandle nh, ros::NodeHandle pnh)
@@ -233,8 +243,6 @@ public:
         rate_data = latest_imu_msg.angular_velocity;
 
         updateAccel();
-
-        //time_data = latest_imu_msg.header;
 
         /* roll pitch and yaw from magnetometer data */
         updateRPYMag();
@@ -410,173 +418,174 @@ public:
 
     void estimateYawError()
     {
-      /* Predict Step */
-      float phi_k[3][3] = {};
-      float phi_k_tr[3][3] = {};
+        ROS_INFO("Delta yaw estimate is %f", delta_x_cap_gyro[0][0]);
+        /* Predict Step */
+        float phi_k[3][3] = {};
+        float phi_k_tr[3][3] = {};
 
-      /* phi_k matrix */
-      phi_k[0][0] = 1;
-      phi_k[0][1] = delta_yaw_gyro;
-      phi_k[0][2] = delta_t;
-      phi_k[1][0] = 0; phi_k[1][1] = 1; phi_k[1][2] = 0;
-      phi_k[2][0] = 0; phi_k[2][1] = 0; phi_k[2][2] = 1;
+        /* phi_k matrix */
+        phi_k[0][0] = 1;
+        phi_k[0][1] = delta_yaw_gyro;
+        phi_k[0][2] = delta_t;
+        phi_k[1][0] = 0; phi_k[1][1] = 1; phi_k[1][2] = 0;
+        phi_k[2][0] = 0; phi_k[2][1] = 0; phi_k[2][2] = 1;
 
-      /* phi_k_tr matrix */
-      phi_k_tr[0][0] = 1;
-      phi_k_tr[1][0] = delta_yaw_gyro;
-      phi_k_tr[2][0] = delta_t;
-      phi_k_tr[0][1] = 0; phi_k[1][1] = 1; phi_k[2][1] = 0;
-      phi_k_tr[0][2] = 0; phi_k[1][2] = 0; phi_k[2][2] = 1;
+        /* phi_k_tr matrix */
+        phi_k_tr[0][0] = 1;
+        phi_k_tr[1][0] = delta_yaw_gyro;
+        phi_k_tr[2][0] = delta_t;
+        phi_k_tr[0][1] = 0; phi_k[1][1] = 1; phi_k[2][1] = 0;
+        phi_k_tr[0][2] = 0; phi_k[1][2] = 0; phi_k[2][2] = 1;
 
-      /* Q_k matrix */
-      float Q_k[3][3] = {};
+        /* Q_k matrix */
+        float Q_k[3][3] = {};
 
-      Q_k[0][0] = (S_bias*pow(delta_t, 3)/3) + (S_scaling*pow(delta_yaw_gyro, 2)*delta_t)/2 + S_arw*detla_t;
-      Q_k[0][1] = (delta_yaw_gyro*S_scaling*delta_t)/2;
-      Q_k[0][2] = (S_bias*pow(delta_t, 2))/2;
-      Q_k[1][0] = (delta_yaw_gyro*S_scaling*detla_t)/2;
-      Q_k[1][1] = S_scaling*delta_t;
-      Q_k[1][2] = 0;
-      Q_k[2][0] = (S_bias*pow(detla_t, 2))/2;
-      Q_k[2][1] = 0;
-      Q_k[2][2] = S_bias*delta_t;
+        Q_k[0][0] = (S_bias*pow(delta_t, 3)/3) + (S_scaling*pow(delta_yaw_gyro, 2)*delta_t)/2 + S_arw*detla_t;
+        Q_k[0][1] = (delta_yaw_gyro*S_scaling*delta_t)/2;
+        Q_k[0][2] = (S_bias*pow(delta_t, 2))/2;
+        Q_k[1][0] = (delta_yaw_gyro*S_scaling*detla_t)/2;
+        Q_k[1][1] = S_scaling*delta_t;
+        Q_k[1][2] = 0;
+        Q_k[2][0] = (S_bias*pow(detla_t, 2))/2;
+        Q_k[2][1] = 0;
+        Q_k[2][2] = S_bias*delta_t;
 
-      float x_cap_priori[3][1] = {};
+        float x_cap_priori[3][1] = {};
 
-      /* Priori State vector prediction */
+        /* Priori State vector prediction */
 
-      x_cap_priori[0][0] = phi_k[0][0]*x_cap_gyro[0][0] + phi_k[0][1]*x_cap_gyro[1][0] + \
-                           phi_k[0][2]*x_cap_gyro[2][0] - delta_x_cap_gyro[0][0];
-      x_cap_priori[1][0] = phi_k[1][0]*x_cap_gyro[0][0] + phi_k[1][1]*x_cap_gyro[1][0] + \
-                           phi_k[1][2]*x_cap_gyro[2][0] - delta_x_cap_gyro[1][0];
-      x_cap_priori[2][0] = phi_k[2][0]*x_cap_gyro[0][0] + phi_k[2][1]*x_cap_gyro[1][0] + \
-                           phi_k[2][2]*x_cap_gyro[2][0] - delta_x_cap_gyro[2][0];
+        x_cap_priori[0][0] = phi_k[0][0]*x_cap_gyro[0][0] + phi_k[0][1]*x_cap_gyro[1][0] + \
+                             phi_k[0][2]*x_cap_gyro[2][0] - delta_x_cap_gyro[0][0];
+        x_cap_priori[1][0] = phi_k[1][0]*x_cap_gyro[0][0] + phi_k[1][1]*x_cap_gyro[1][0] + \
+                             phi_k[1][2]*x_cap_gyro[2][0] - delta_x_cap_gyro[1][0];
+        x_cap_priori[2][0] = phi_k[2][0]*x_cap_gyro[0][0] + phi_k[2][1]*x_cap_gyro[1][0] + \
+                             phi_k[2][2]*x_cap_gyro[2][0] - delta_x_cap_gyro[2][0];
 
-      float temp_matrix[3][3] = {};
-      float P_matrix_priori[3][3] = {};
+        float temp_matrix[3][3] = {};
+        float P_matrix_priori[3][3] = {};
 
-      /* Priori Covariance matrix calculation */
+        /* Priori Covariance matrix calculation */
 
-      for (int i = 0; i < 3; i++)
-      {
-          for (int j = 0; j < 3; j++)
-          {
-              temp_matrix[i][j] = phi_k[i][0]*P_matrix_gyro[0][j] + phi_k[i][1]*P_matrix_gyro[1][j] + phi_k[i][2]*P_matrix_gyro[2][j];
-          }
-      }
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                temp_matrix[i][j] = phi_k[i][0]*P_matrix_gyro[0][j] + phi_k[i][1]*P_matrix_gyro[1][j] + phi_k[i][2]*P_matrix_gyro[2][j];
+            }
+        }
 
-      for (int i = 0; i < 3; i++)
-      {
-          for (int j = 0; j < 3; j++)
-          {
-              P_matrix_priori[i][j] = temp_matrix[i][0]*phi_k_tr[0][j] + temp_matrix[i][1]*phi_k_tr[1][j] + temp_matrix[i][2]*phi_k_tr[2][j] + Q_k[i][j];
-          }
-      }
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                P_matrix_priori[i][j] = temp_matrix[i][0]*phi_k_tr[0][j] + temp_matrix[i][1]*phi_k_tr[1][j] + temp_matrix[i][2]*phi_k_tr[2][j] + Q_k[i][j];
+            }
+        }
 
-      /* Update Step */
+        /* Update Step */
 
-      float kalman_gain[3][1] = {};
-      float scaling_factor = 0;
+        float kalman_gain[3][1] = {};
+        float scaling_factor = 0;
 
-      scaling_factor = H_matrix_gyro[0][0] * (H_matrix_gyro[0][0]*P_matrix_priori[0][0] + H_matrix_gyro[0][1]*P_matrix_priori[1][0] + H_matrix_gyro[0][2]*P_matrix_priori[2][0]) \
-                     + H_matrix_gyro[0][1] * (H_matrix_gyro[0][0]*P_matrix_priori[0][1] + H_matrix_gyro[0][1]*P_matrix_priori[1][1] + H_matrix_gyro[0][2]*P_matrix_priori[2][1]) \
-                     + H_matrix_gyro[0][2] * (H_matrix_gyro[0][0]*P_matrix_priori[0][2] + H_matrix_gyro[0][1]*P_matrix_priori[1][2] + H_matrix_gyro[0][2]*P_matrix_priori[2][2]);
-      scaling_factor = scaling_factor + R_covariance;
+        scaling_factor = H_matrix_gyro[0][0] * (H_matrix_gyro[0][0]*P_matrix_priori[0][0] + H_matrix_gyro[0][1]*P_matrix_priori[1][0] + H_matrix_gyro[0][2]*P_matrix_priori[2][0]) \
+                       + H_matrix_gyro[0][1] * (H_matrix_gyro[0][0]*P_matrix_priori[0][1] + H_matrix_gyro[0][1]*P_matrix_priori[1][1] + H_matrix_gyro[0][2]*P_matrix_priori[2][1]) \
+                       + H_matrix_gyro[0][2] * (H_matrix_gyro[0][0]*P_matrix_priori[0][2] + H_matrix_gyro[0][1]*P_matrix_priori[1][2] + H_matrix_gyro[0][2]*P_matrix_priori[2][2]);
+        scaling_factor = scaling_factor + R_covariance;
 
-      /* Calcuation of Kalman Gain */
+        /* Calcuation of Kalman Gain */
 
-      for (int i = 0; i < 3; i++)
-      {
-          kalman_gain[i][0] = (P_matrix_priori[i][0]*H_matrix_gyro[0][0] + P_matrix_priori[i][1]*H_matrix_gyro[0][1] + P_matrix_priori[i][2]*H_matrix_gyro[0][2]) * scaling_factor
-      }
+        for (int i = 0; i < 3; i++)
+        {
+            kalman_gain[i][0] = (P_matrix_priori[i][0]*H_matrix_gyro[0][0] + P_matrix_priori[i][1]*H_matrix_gyro[0][1] + P_matrix_priori[i][2]*H_matrix_gyro[0][2]) * scaling_factor
+        }
 
-      //float z = yaw_gyro - delta_x_cap_gyro[0][0] - yaw_mag_pres.z;
-      float z = delta_x_cap_gyro[0][0] + delta_yaw_gyro*delta_x_cap_gyro[1][0] + delta_t*delta_x_cap_gyro[2][0];
-      float innovation_temp = H_matrix_gyro[0][0]*x_cap_priori[0][0] + H_matrix_gyro[0][1]*x_cap_priori[1][0] + H_matrix_gyro[0][2]*x_cap_priori[2][0];
-      float x_cap_posteriori[3][1] = {};
+        //float z = yaw_gyro - delta_x_cap_gyro[0][0] - yaw_mag_pres.z;
+        float z = delta_x_cap_gyro[0][0] + delta_yaw_gyro*delta_x_cap_gyro[1][0] + delta_t*delta_x_cap_gyro[2][0];
+        float innovation_temp = H_matrix_gyro[0][0]*x_cap_priori[0][0] + H_matrix_gyro[0][1]*x_cap_priori[1][0] + H_matrix_gyro[0][2]*x_cap_priori[2][0];
+        float x_cap_posteriori[3][1] = {};
 
-      /* Posteriori state vector prediction */
-      for (int i = 0; i < 3; i++)
-      {
-          x_cap_posteriori[i][0] = x_cap_priori[i][0] + kalman_gain[i][0] * (z - innovation_temp);
-      }
+        /* Posteriori state vector prediction */
+        for (int i = 0; i < 3; i++)
+        {
+            x_cap_posteriori[i][0] = x_cap_priori[i][0] + kalman_gain[i][0] * (z - innovation_temp);
+        }
 
-      /* Posteriori covariance matrix calculation. */
+        /* Posteriori covariance matrix calculation. */
 
-      float P_matrix_posteriori[3][3] = {};
-      float Left_matrix[3][3] = {};
+        float P_matrix_posteriori[3][3] = {};
+        float Left_matrix[3][3] = {};
 
-      for (int i = 0; i < 3; i++)
-      {
-          for (int j = 0; j < 3; j++)
-          {
-              Left_matrix[i][j] = (1 - kalman_gain[i][0]*H_matrix_gyro[0][j]);
-          }
-      }
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                Left_matrix[i][j] = (1 - kalman_gain[i][0]*H_matrix_gyro[0][j]);
+            }
+        }
 
-      float Right_matrix[3][3] = {};
+        float Right_matrix[3][3] = {};
 
-      for (int i = 0; i < 3; i++)
-      {
-          for (int j = 0; j < 3; j++)
-          {
-              Right_matrix[i][j] = (1 - H_matrix_gyro[0][i]*kalman_gain[j][0]);
-          }
-      }
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                Right_matrix[i][j] = (1 - H_matrix_gyro[0][i]*kalman_gain[j][0]);
+            }
+        }
 
-      float a_temp_matrix[3][3] = {};
+        float a_temp_matrix[3][3] = {};
 
-      for (int i = 0; i < 3; i++)
-      {
-          for (int j = 0; j < 3; j++)
-          {
-              a_temp_matrix[i][j] = 0;
-              for (k = 0; k < 3; k++)
-              {
-                  a_temp_matrix[i][j] += Left_matrix[i][k]*P_matrix_priori[k][j];
-              }
-          }
-      }
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                a_temp_matrix[i][j] = 0;
+                for (k = 0; k < 3; k++)
+                {
+                    a_temp_matrix[i][j] += Left_matrix[i][k]*P_matrix_priori[k][j];
+                }
+            }
+        }
 
-      float b_temp_matrix[3][3] = {};
+        float b_temp_matrix[3][3] = {};
 
-      for (int i = 0; i < 3; i++)
-      {
-          for (int j = 0; j < 3; j++)
-          {
-              b_temp_matrix[i][j] = 0;
-              for (k = 0; k < 3; k++)
-              {
-                  b_temp_matrix[i][j] += a_temp_matrix[i][k]*Right_matrix[k][j];
-              }
-          }
-      }
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                b_temp_matrix[i][j] = 0;
+                for (k = 0; k < 3; k++)
+                {
+                    b_temp_matrix[i][j] += a_temp_matrix[i][k]*Right_matrix[k][j];
+                }
+            }
+        }
 
-      float c_temp_matrix[3][3] = {};
+        float c_temp_matrix[3][3] = {};
 
-      for (int i = 0; i < 3; i++)
-      {
-          for (int j = 0; j < 3; j++)
-          {
-              c_temp_matrix[i][j] = kalman_gain[i][0]*R_covariance*kalman_gain[j][0];
-          }
-      }
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                c_temp_matrix[i][j] = kalman_gain[i][0]*R_covariance*kalman_gain[j][0];
+            }
+        }
 
-      for (int i = 0; i < 3; i++)
-      {
-          for (int j = 0; j < 3; j++)
-          {
-              P_matrix_posteriori[i][j] = b_temp_matrix[i][j] + c_temp_matrix[i][j];
-          }
-      }
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                P_matrix_posteriori[i][j] = b_temp_matrix[i][j] + c_temp_matrix[i][j];
+            }
+        }
 
-      /* Error updater for next step */
+        /* Error updater for next step */
 
-      delta_x_cap_gyro = delta_x_cap_gyro + x_cap_posteriori;
+        delta_x_cap_gyro = delta_x_cap_gyro + x_cap_posteriori;
 
-      P_matrix_gyro = P_matrix_posteriori;
+        P_matrix_gyro = P_matrix_posteriori;
 
-      x_cap_gyro = x_cap_posteriori;
+        x_cap_gyro = x_cap_posteriori;
     }
 
     void updateYawAfterErrorEstimate()
@@ -592,7 +601,6 @@ public:
         float accel_net = pow((pow(lin_acc_x_data, 2) + pow(lin_acc_y_data, 2) + pow(lin_acc_z_data, 2)), 0.5);
         if ((accel_net > g_data + g_thresh) || (accel_net < g_data - g_thresh))
         {
-            /* TODO: Change the calculation of Net acceleration with newly derived equations */
             float a_xr = lin_acc_x_data;
             float a_yr = lin_acc_y_data * cos(rpy_accel_data_norm.x * M_PI/180) + lin_acc_z_data * sin(rpy_accel_data_norm.x * M_PI/180);
             float a_zr = lin_acc_z_data * cos(rpy_accel_data_norm.x * M_PI/180) - lin_acc_y_data * sin(rpy_accel_data_norm.x * M_PI/180);
